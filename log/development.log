@@ -1,0 +1,1341 @@
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at /home/bradleygray-hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /home/bradleygray-hall/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for ::1 at 2023-10-02 01:12:38 -0400
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 10 pending migrations:
+
+20210605134712_create_publications.rb
+20210605135646_create_personnels.rb
+20210605135815_create_posts.rb
+20210609224250_create_active_storage_tables.active_storage.rb
+20210611200410_devise_create_users.rb
+20210910223433_create_action_text_tables.action_text.rb
+20220221190626_add_service_name_to_active_storage_blobs.active_storage.rb
+20220221190627_create_active_storage_variant_records.active_storage.rb
+20220221190628_remove_not_null_on_active_storage_blobs_checksum.active_storage.rb
+20220317014934_create_activity_logs.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started PUT "/__web_console/repl_sessions/fdcfe9140f1510f455eeac1d8eb81a12" for ::1 at 2023-10-02 01:12:52 -0400
+Started PUT "/__web_console/repl_sessions/fdcfe9140f1510f455eeac1d8eb81a12" for ::1 at 2023-10-02 01:12:53 -0400
+Started GET "/" for ::1 at 2023-10-02 01:13:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 10 pending migrations:
+
+20210605134712_create_publications.rb
+20210605135646_create_personnels.rb
+20210605135815_create_posts.rb
+20210609224250_create_active_storage_tables.active_storage.rb
+20210611200410_devise_create_users.rb
+20210910223433_create_action_text_tables.action_text.rb
+20220221190626_add_service_name_to_active_storage_blobs.active_storage.rb
+20220221190627_create_active_storage_variant_records.active_storage.rb
+20220221190628_remove_not_null_on_active_storage_blobs_checksum.active_storage.rb
+20220317014934_create_activity_logs.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at /home/bradleygray-hall/cheelab/app/models/application_record.rb:3)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePublications (20210605134712)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "publications" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "authors" varchar, "year" varchar, "title" varchar, "journal" varchar, "volume" varchar, "first_page" varchar, "last_page" varchar, "hyperlink" varchar, "sort_date" date, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210605134712"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePersonnels (20210605135646)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "personnels" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "sort_name" varchar, "role" varchar, "education" varchar, "awards" varchar, "publications" varchar, "alumni" boolean, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210605135646"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePosts (20210605135815)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "text" varchar, "sort_date" date, "text_date" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210605135815"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveStorageTables (20210609224250)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "byte_size" bigint NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" integer NOT NULL, "blob_id" integer NOT NULL, "created_at" datetime NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210609224250"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreateUsers (20210611200410)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210611200410"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActionTextTables (20210910223433)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "action_text_rich_texts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "body" text, "record_type" varchar NOT NULL, "record_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_action_text_rich_texts_uniqueness" ON "action_text_rich_texts" ("record_type", "record_id", "name")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210910223433"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddServiceNameToActiveStorageBlobs (20220221190626)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "active_storage_blobs" ADD "service_name" varchar[0m
+  [1m[36mActiveStorage::Blob Update All (0.0ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "service_name" = ?[0m  [["service_name", "local"]]
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aactive_storage_blobs" ("id" integer NOT NULL PRIMARY KEY, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar DEFAULT NULL, "metadata" text DEFAULT NULL, "byte_size" integer NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL, "service_name" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_aactive_storage_blobs_on_key" ON "aactive_storage_blobs" ("key")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aactive_storage_blobs" ("id","key","filename","content_type","metadata","byte_size","checksum","created_at","service_name")
+                     SELECT "id","key","filename","content_type","metadata","byte_size","checksum","created_at","service_name" FROM "active_storage_blobs"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "active_storage_blobs"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer NOT NULL PRIMARY KEY, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar DEFAULT NULL, "metadata" text DEFAULT NULL, "byte_size" integer NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL, "service_name" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("id","key","filename","content_type","metadata","byte_size","checksum","created_at","service_name")
+                     SELECT "id","key","filename","content_type","metadata","byte_size","checksum","created_at","service_name" FROM "aactive_storage_blobs"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aactive_storage_blobs"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220221190626"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveStorageVariantRecords (20220221190627)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE IF NOT EXISTS "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" integer NOT NULL, "variation_digest" varchar NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX IF NOT EXISTS "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220221190627"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveNotNullOnActiveStorageBlobsChecksum (20220221190628)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aactive_storage_blobs" ("id" integer NOT NULL PRIMARY KEY, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar DEFAULT NULL, "metadata" text DEFAULT NULL, "byte_size" integer NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL, "service_name" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_aactive_storage_blobs_on_key" ON "aactive_storage_blobs" ("key")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aactive_storage_blobs" ("id","key","filename","content_type","metadata","byte_size","checksum","created_at","service_name")
+                     SELECT "id","key","filename","content_type","metadata","byte_size","checksum","created_at","service_name" FROM "active_storage_blobs"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "active_storage_blobs"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer NOT NULL PRIMARY KEY, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar DEFAULT NULL, "metadata" text DEFAULT NULL, "byte_size" integer NOT NULL, "checksum" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "service_name" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("id","key","filename","content_type","metadata","byte_size","checksum","created_at","service_name")
+                     SELECT "id","key","filename","content_type","metadata","byte_size","checksum","created_at","service_name" FROM "aactive_storage_blobs"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aactive_storage_blobs"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220221190628"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActivityLogs (20220317014934)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "activity_logs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "activity" varchar, "child" boolean, "donated" boolean, "location" varchar, "email" varchar, "phone_number" varchar, "name" varchar, "number_of_steps" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220317014934"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-10-02 05:13:19.839442"], ["updated_at", "2023-10-02 05:13:19.839442"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at /home/bradleygray-hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /home/bradleygray-hall/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for ::1 at 2023-10-02 01:13:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 479.8ms | Allocations: 165673)
+  Rendered layouts/_fonts.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 115)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 1060)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 489.9ms | Allocations: 170960)
+Completed 200 OK in 496ms (Views: 491.3ms | ActiveRecord: 0.0ms | Allocations: 174793)
+
+
+Started GET "/brainfreeze" for ::1 at 2023-10-02 01:13:32 -0400
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1351)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 754)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 5242)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 5499)
+
+
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at /home/bradleygray-hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /home/bradleygray-hall/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for ::1 at 2023-10-02 13:00:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 62.8ms | Allocations: 44734)
+  Rendered layouts/_fonts.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 115)
+  Rendered layouts/_navbar.html.erb (Duration: 9.0ms | Allocations: 1080)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 78.9ms | Allocations: 50185)
+Completed 200 OK in 85ms (Views: 81.0ms | ActiveRecord: 0.0ms | Allocations: 53379)
+
+
+Started GET "/brainfreeze" for ::1 at 2023-10-02 13:00:58 -0400
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1370)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 755)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 5264)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 5520)
+
+
+Started GET "/brainfreeze" for ::1 at 2023-10-02 13:01:15 -0400
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1097)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 754)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 4948)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 5203)
+
+
+Started GET "/" for ::1 at 2023-10-02 13:04:06 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1157)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 782)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 5147)
+Completed 200 OK in 5ms (Views: 4.6ms | Allocations: 5774)
+
+
+Started GET "/brainfreeze" for ::1 at 2023-10-02 13:04:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze"):
+  
+Started GET "/brainfreeze" for ::1 at 2023-10-02 13:06:30 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1794)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 791)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 5823)
+Completed 200 OK in 6ms (Views: 4.9ms | Allocations: 6558)
+
+
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at /home/bradleygray-hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /home/bradleygray-hall/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for ::1 at 2023-10-02 18:55:39 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 42.1ms | Allocations: 43922)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 118)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 1081)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 58.3ms | Allocations: 49401)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.0ms | Allocations: 52587)
+
+
+Started GET "/brainfreeze" for ::1 at 2023-10-02 18:55:41 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1728)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 755)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5619)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 6007)
+
+
+Started GET "/brainfreeze/2023" for ::1 at 2023-10-02 18:55:53 -0400
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1369)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 754)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5202)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 5457)
+
+
+Started GET "/brainfreeze/assets/brainfreeze2021.png" for ::1 at 2023-10-02 18:55:53 -0400
+Started GET "/brainfreeze/assets/brainfreeze2022.png" for ::1 at 2023-10-02 18:55:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2021.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2022.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2020.png" for ::1 at 2023-10-02 18:55:53 -0400
+Started GET "/brainfreeze/assets/brainfreeze2019.png" for ::1 at 2023-10-02 18:55:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2020.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2019.png"):
+  
+Started GET "/brainfreeze/2022" for ::1 at 2023-10-02 18:55:58 -0400
+Processing by StaticPagesController#brainfreeze2022 as HTML
+  [1m[36mActivityLog Sum (0.1ms)[0m  [1m[34mSELECT SUM("activity_logs"."number_of_steps") FROM "activity_logs"[0m
+  ↳ app/controllers/static_pages_controller.rb:17:in `brainfreeze2022'
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2022.html.erb within layouts/application
+  [1m[36mActivityLog Load (0.1ms)[0m  [1m[34mSELECT "activity_logs".* FROM "activity_logs" ORDER BY created_at DESC[0m
+  ↳ app/views/static_pages/brainfreeze2022.html.erb:136
+  Rendered static_pages/brainfreeze2022.html.erb within layouts/application (Duration: 3.1ms | Allocations: 3054)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 764)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 6813)
+Completed 200 OK in 29ms (Views: 6.6ms | ActiveRecord: 0.9ms | Allocations: 17846)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 18:57:11 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1653)
+  Rendered layouts/_fonts.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 6551)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 7342)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 18:57:25 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1769)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 932)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 6774)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 7567)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 18:58:32 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1695)
+  Rendered layouts/_fonts.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6587)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 7379)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 18:59:17 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1631)
+  Rendered layouts/_fonts.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 932)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 6648)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 7441)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 19:00:06 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1559)
+  Rendered layouts/_fonts.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 151)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 6466)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 7258)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 19:00:44 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1554)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 924)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 6523)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 7315)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 19:01:08 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1546)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 1.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 6465)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 7257)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 19:01:44 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1538)
+  Rendered layouts/_fonts.html.erb (Duration: 0.3ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 931)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 6522)
+Completed 200 OK in 9ms (Views: 8.0ms | Allocations: 7314)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 19:02:07 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1533)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 6452)
+Completed 200 OK in 7ms (Views: 6.1ms | Allocations: 7243)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 19:02:35 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1539)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 6552)
+Completed 200 OK in 12ms (Views: 11.5ms | Allocations: 7345)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 19:02:57 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1528)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 6441)
+Completed 200 OK in 6ms (Views: 6.0ms | Allocations: 7232)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 19:03:24 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1517)
+  Rendered layouts/_fonts.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 933)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 6541)
+Completed 200 OK in 8ms (Views: 7.0ms | Allocations: 7334)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 19:03:49 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1501)
+  Rendered layouts/_fonts.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 6415)
+Completed 200 OK in 7ms (Views: 6.2ms | Allocations: 7207)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-02 19:04:40 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1485)
+  Rendered layouts/_fonts.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 932)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 6502)
+Completed 200 OK in 9ms (Views: 7.7ms | Allocations: 7295)
+
+
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at /home/bradleygray-hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /home/bradleygray-hall/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for 127.0.0.1 at 2023-10-15 19:45:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 129.1ms | Allocations: 44827)
+  Rendered layouts/_fonts.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layouts/_navbar.html.erb (Duration: 3.8ms | Allocations: 1084)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 155.2ms | Allocations: 50118)
+Completed 200 OK in 164ms (Views: 157.8ms | ActiveRecord: 0.0ms | Allocations: 53304)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2023-10-15 19:45:33 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1442)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 754)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 5330)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 5713)
+
+
+Started GET "/brainfreeze/2023" for 127.0.0.1 at 2023-10-15 19:45:59 -0400
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1369)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 764)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 5215)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 5471)
+
+
+Started GET "/brainfreeze/assets/brainfreeze2022.png" for 127.0.0.1 at 2023-10-15 19:45:59 -0400
+Started GET "/brainfreeze/assets/brainfreeze2021.png" for 127.0.0.1 at 2023-10-15 19:45:59 -0400
+Started GET "/brainfreeze/assets/brainfreeze2020.png" for 127.0.0.1 at 2023-10-15 19:45:59 -0400
+Started GET "/brainfreeze/assets/brainfreeze2019.png" for 127.0.0.1 at 2023-10-15 19:45:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2022.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2021.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2020.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2019.png"):
+  
+Started GET "/brainfreeze/2022" for 127.0.0.1 at 2023-10-15 19:54:20 -0400
+Processing by StaticPagesController#brainfreeze2022 as HTML
+  [1m[36mActivityLog Sum (0.1ms)[0m  [1m[34mSELECT SUM("activity_logs"."number_of_steps") FROM "activity_logs"[0m
+  ↳ app/controllers/static_pages_controller.rb:17:in `brainfreeze2022'
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2022.html.erb within layouts/application
+  [1m[36mActivityLog Load (0.3ms)[0m  [1m[34mSELECT "activity_logs".* FROM "activity_logs" ORDER BY created_at DESC[0m
+  ↳ app/views/static_pages/brainfreeze2022.html.erb:136
+  Rendered static_pages/brainfreeze2022.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3047)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 764)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 6805)
+Completed 200 OK in 40ms (Views: 11.1ms | ActiveRecord: 1.2ms | Allocations: 17919)
+
+
+Started GET "/brainfreeze/assets/brainfreeze2022.png" for 127.0.0.1 at 2023-10-15 19:54:22 -0400
+Started GET "/brainfreeze/assets/brainfreeze2021.png" for 127.0.0.1 at 2023-10-15 19:54:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2022.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2019.png" for 127.0.0.1 at 2023-10-15 19:54:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2021.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2020.png" for 127.0.0.1 at 2023-10-15 19:54:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2019.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2020.png"):
+  
+Started GET "/brainfreeze/2021" for 127.0.0.1 at 2023-10-15 19:54:24 -0400
+Processing by StaticPagesController#brainfreeze2021 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2021.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2021.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1721)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 763)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 5675)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 5929)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2023-10-15 19:54:45 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1159)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 763)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 5118)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 5370)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2023-10-15 19:56:13 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1496)
+  Rendered layouts/_fonts.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 6391)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 7183)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2023-10-15 20:00:21 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1472)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 932)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 6491)
+Completed 200 OK in 16ms (Views: 14.8ms | Allocations: 7284)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2023-10-15 20:01:12 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1462)
+  Rendered layouts/_fonts.html.erb (Duration: 0.9ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 6360)
+Completed 200 OK in 16ms (Views: 15.4ms | Allocations: 7152)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2023-10-15 20:01:43 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1464)
+  Rendered layouts/_fonts.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 933)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 6426)
+Completed 200 OK in 14ms (Views: 12.8ms | Allocations: 7218)
+
+
+Started GET "/" for ::1 at 2023-10-15 20:03:39 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1371)
+  Rendered layouts/_fonts.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 932)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 6227)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 6947)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-15 20:03:41 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1407)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 754)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5258)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 5641)
+
+
+Started GET "/brainfreeze/" for ::1 at 2023-10-15 20:05:31 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1486)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 932)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 6494)
+Completed 200 OK in 15ms (Views: 14.3ms | Allocations: 7286)
+
+
+Started GET "/brainfreeze/2023" for ::1 at 2023-10-15 20:05:50 -0400
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1349)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 754)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 5180)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 5432)
+
+
+Started GET "/brainfreeze/assets/brainfreeze2022.png" for ::1 at 2023-10-15 20:05:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2022.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2021.png" for ::1 at 2023-10-15 20:05:50 -0400
+Started GET "/brainfreeze/assets/brainfreeze2020.png" for ::1 at 2023-10-15 20:05:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2021.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2019.png" for ::1 at 2023-10-15 20:05:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2020.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2019.png"):
+  
+Started GET "/brainfreeze/2023" for ::1 at 2023-10-15 20:06:32 -0400
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1410)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 3.5ms | Allocations: 932)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 6429)
+Completed 200 OK in 16ms (Views: 15.9ms | Allocations: 7032)
+
+
+Started GET "/brainfreeze/assets/brainfreeze2022.png" for ::1 at 2023-10-15 20:06:33 -0400
+Started GET "/brainfreeze/assets/brainfreeze2020.png" for ::1 at 2023-10-15 20:06:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2022.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2021.png" for ::1 at 2023-10-15 20:06:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2020.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2019.png" for ::1 at 2023-10-15 20:06:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2021.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2019.png"):
+  
+Started GET "/brainfreeze" for ::1 at 2023-10-15 20:06:39 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1345)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 754)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 5287)
+Completed 200 OK in 8ms (Views: 7.3ms | Allocations: 5669)
+
+
+Started GET "/brainfreeze" for ::1 at 2023-10-15 20:07:01 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1389)
+  Rendered layouts/_fonts.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 932)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 6413)
+Completed 200 OK in 15ms (Views: 14.3ms | Allocations: 7204)
+
+
+Started GET "/brainfreeze" for ::1 at 2023-10-15 20:08:32 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1381)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 6389)
+Completed 200 OK in 17ms (Views: 15.6ms | Allocations: 7180)
+
+
+Started GET "/brainfreeze" for ::1 at 2023-10-15 20:10:15 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1394)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 932)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 6410)
+Completed 200 OK in 15ms (Views: 14.1ms | Allocations: 7203)
+
+
+Started GET "/brainfreeze" for ::1 at 2023-10-15 20:13:46 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1383)
+  Rendered layouts/_fonts.html.erb (Duration: 0.7ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 6281)
+Completed 200 OK in 19ms (Views: 17.5ms | Allocations: 7073)
+
+
+Started GET "/brainfreeze/2023" for ::1 at 2023-10-15 20:15:34 -0400
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1363)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 764)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5303)
+Completed 200 OK in 10ms (Views: 9.8ms | Allocations: 5557)
+
+
+Started GET "/brainfreeze/assets/brainfreeze2022.png" for ::1 at 2023-10-15 20:15:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2022.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2021.png" for ::1 at 2023-10-15 20:15:34 -0400
+Started GET "/brainfreeze/assets/brainfreeze2020.png" for ::1 at 2023-10-15 20:15:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2021.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2019.png" for ::1 at 2023-10-15 20:15:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2020.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2019.png"):
+  
+Started GET "/brainfreeze" for ::1 at 2023-10-15 20:34:22 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1405)
+  Rendered layouts/_fonts.html.erb (Duration: 0.3ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 6419)
+Completed 200 OK in 12ms (Views: 11.1ms | Allocations: 7209)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/brainfreeze2023.png"):
+  
+Started GET "/brainfreeze" for ::1 at 2023-10-15 20:34:36 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1412)
+  Rendered layouts/_fonts.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 1.6ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 932)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 6447)
+Completed 200 OK in 14ms (Views: 12.8ms | Allocations: 7240)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/brainfreeze2023.png"):
+  
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at /home/bradleygray-hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /home/bradleygray-hall/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/brainfreeze/2023" for 127.0.0.1 at 2023-10-15 21:07:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 141.8ms | Allocations: 45245)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 96)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 1081)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 167.2ms | Allocations: 50712)
+Completed 200 OK in 174ms (Views: 169.8ms | ActiveRecord: 0.0ms | Allocations: 53234)
+
+
+Started GET "/brainfreeze/assets/brainfreeze2022.png" for 127.0.0.1 at 2023-10-15 21:07:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2022.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2020.png" for 127.0.0.1 at 2023-10-15 21:07:05 -0400
+Started GET "/brainfreeze/assets/brainfreeze2019.png" for 127.0.0.1 at 2023-10-15 21:07:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2020.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2021.png" for 127.0.0.1 at 2023-10-15 21:07:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2019.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2021.png"):
+  
+Started GET "/brainfreeze/" for 127.0.0.1 at 2023-10-15 21:07:11 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1361)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 763)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 5317)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 5705)
+
+
+Started GET "/brainfreeze/assets/brainfreeze2023.png" for 127.0.0.1 at 2023-10-15 21:07:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2023.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2022.png" for 127.0.0.1 at 2023-10-15 21:07:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2022.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2020.png" for 127.0.0.1 at 2023-10-15 21:07:11 -0400
+Started GET "/brainfreeze/assets/brainfreeze2019.png" for 127.0.0.1 at 2023-10-15 21:07:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2020.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2021.png" for 127.0.0.1 at 2023-10-15 21:07:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2019.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2021.png"):
+  
+Started GET "/brainfreeze/" for 127.0.0.1 at 2023-10-15 21:07:16 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1106)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 763)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 5051)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 5306)
+
+
+Started GET "/brainfreeze/assets/brainfreeze2023.png" for 127.0.0.1 at 2023-10-15 21:07:16 -0400
+Started GET "/brainfreeze/assets/brainfreeze2022.png" for 127.0.0.1 at 2023-10-15 21:07:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2023.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2022.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2021.png" for 127.0.0.1 at 2023-10-15 21:07:16 -0400
+Started GET "/brainfreeze/assets/brainfreeze2019.png" for 127.0.0.1 at 2023-10-15 21:07:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2021.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2019.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2020.png" for 127.0.0.1 at 2023-10-15 21:07:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2020.png"):
+  
+Started GET "/brainfreeze/" for 127.0.0.1 at 2023-10-15 21:08:29 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1109)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 765)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 56.1ms | Allocations: 22622)
+Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.0ms | Allocations: 22878)
+
+
+Started GET "/brainfreeze/assets/brainfreeze2023.png" for 127.0.0.1 at 2023-10-15 21:08:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2023.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2022.png" for 127.0.0.1 at 2023-10-15 21:08:29 -0400
+Started GET "/brainfreeze/assets/brainfreeze2020.png" for 127.0.0.1 at 2023-10-15 21:08:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2022.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2021.png" for 127.0.0.1 at 2023-10-15 21:08:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2020.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2019.png" for 127.0.0.1 at 2023-10-15 21:08:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2021.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2019.png"):
+  
+Started GET "/brainfreeze/2023" for 127.0.0.1 at 2023-10-15 21:08:31 -0400
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1111)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 765)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 5140)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 5393)
+
+
+Started GET "/brainfreeze/assets/brainfreeze2022.png" for 127.0.0.1 at 2023-10-15 21:08:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2022.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2021.png" for 127.0.0.1 at 2023-10-15 21:08:31 -0400
+Started GET "/brainfreeze/assets/brainfreeze2020.png" for 127.0.0.1 at 2023-10-15 21:08:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2021.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2020.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2019.png" for 127.0.0.1 at 2023-10-15 21:08:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2019.png"):
+  
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at /home/bradleygray-hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /home/bradleygray-hall/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/brainfreeze/2023" for 127.0.0.1 at 2023-10-16 16:32:44 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 174.0ms | Allocations: 86264)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 115)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 1062)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 185.8ms | Allocations: 91696)
+Completed 200 OK in 192ms (Views: 187.8ms | ActiveRecord: 0.0ms | Allocations: 94218)
+
+
+Started GET "/brainfreeze/assets/brainfreeze2022.png" for 127.0.0.1 at 2023-10-16 16:32:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2022.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2021.png" for 127.0.0.1 at 2023-10-16 16:32:44 -0400
+Started GET "/brainfreeze/assets/brainfreeze2020.png" for 127.0.0.1 at 2023-10-16 16:32:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2021.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2020.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2019.png" for 127.0.0.1 at 2023-10-16 16:32:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2019.png"):
+  
+Started GET "/brainfreeze/" for 127.0.0.1 at 2023-10-16 16:32:50 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1358)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 756)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 5242)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 5631)
+
+
+Started GET "/brainfreeze/assets/brainfreeze2023.png" for 127.0.0.1 at 2023-10-16 16:32:50 -0400
+Started GET "/brainfreeze/assets/brainfreeze2022.png" for 127.0.0.1 at 2023-10-16 16:32:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2023.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2022.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2019.png" for 127.0.0.1 at 2023-10-16 16:32:50 -0400
+Started GET "/brainfreeze/assets/brainfreeze2021.png" for 127.0.0.1 at 2023-10-16 16:32:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2019.png"):
+  
+Started GET "/brainfreeze/assets/brainfreeze2020.png" for 127.0.0.1 at 2023-10-16 16:32:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2021.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/brainfreeze/assets/brainfreeze2020.png"):
+  
+Started GET "/brainfreeze/2023" for 127.0.0.1 at 2023-10-16 16:34:44 -0400
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1410)
+  Rendered layouts/_fonts.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 925)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6365)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 6971)
+
+
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at /home/bradleygray-hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /home/bradleygray-hall/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for ::1 at 2023-10-29 13:10:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 252.0ms | Allocations: 88411)
+  Rendered layouts/_fonts.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 1062)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 264.5ms | Allocations: 93853)
+Completed 200 OK in 272ms (Views: 266.9ms | ActiveRecord: 0.0ms | Allocations: 97040)
+
+
+Started GET "/brainfreeze" for ::1 at 2023-10-29 13:10:32 -0400
+Processing by StaticPagesController#brainfreeze as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze.html.erb within layouts/application
+  Rendered static_pages/brainfreeze.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1361)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 764)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5275)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 5665)
+
+
+Started GET "/brainfreeze/2022" for ::1 at 2023-10-29 13:10:39 -0400
+Processing by StaticPagesController#brainfreeze2022 as HTML
+  [1m[36mActivityLog Sum (0.1ms)[0m  [1m[34mSELECT SUM("activity_logs"."number_of_steps") FROM "activity_logs"[0m
+  ↳ app/controllers/static_pages_controller.rb:17:in `brainfreeze2022'
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2022.html.erb within layouts/application
+  [1m[36mActivityLog Load (0.1ms)[0m  [1m[34mSELECT "activity_logs".* FROM "activity_logs" ORDER BY created_at DESC[0m
+  ↳ app/views/static_pages/brainfreeze2022.html.erb:136
+  Rendered static_pages/brainfreeze2022.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3074)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 757)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 6723)
+Completed 200 OK in 19ms (Views: 8.7ms | ActiveRecord: 0.8ms | Allocations: 14812)
+
+

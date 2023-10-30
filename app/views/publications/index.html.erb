@@ -1,0 +1,38 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag "publications" %>
+<% end %>
+
+<div class="pic">
+  <div class="publications">
+    <br/>
+    <h1>PUBLICATIONS</h1>
+    <hr>
+
+    <div id="pub">
+        <%= link_to 'New Publication', new_publication_path, class: "mb-5 btn btn-lg btn-primary" if user_signed_in? %>
+
+          <div id="text">
+            <% @publications.each do |pub| %>
+                <p>
+                    <%= pub.authors %> (<%= pub.year %>)<a href=<%= pub.hyperlink %>  target="_blank"><strong>
+                    <%= pub.title %></strong></a> <%= pub.journal %>  <%= pub.volume %>:<%= pub.first_page %>
+                    <% if (!pub.last_page.blank?) %>
+                      —<%= pub.last_page %>.
+                    <% end %>
+                </p>
+                <% if user_signed_in? %>
+                    <div class="btn-group" role="group">
+                      <%= link_to 'Edit', edit_publication_path(pub), class: "btn  btn-primary" %>
+                      <%= button_to 'Destroy', pub, :method => :delete, class: "btn  btn-danger", data: { confirm: 'Are you sure?' } %>
+                    </div>
+              <% end %>
+                  <br/>
+            <% end %>
+            </div>
+            <div class="container">
+                <%= will_paginate @publications %>
+            </div>
+    </div>
+  </div>
+</div>
+

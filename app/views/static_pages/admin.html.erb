@@ -1,0 +1,55 @@
+
+
+<div class="container pt-5 mt-5">
+
+  <div class="container-fluid mt-5 pt-5 ">
+
+    <h2>Hello! What would you like to do?</h2>
+
+    <div class=" container-fluid text-center">
+      <div class="row text-center">
+        <div class="card-group text-center">
+
+          <div class="col col-md-4 col-12">
+            <div class="card py-5 px-3">
+              <div class="card-body">
+                <h5 class="card-title">Blog</h5>
+                <%= link_to 'Add a new Blog Post', new_post_path, class: "my-2 btn btn-primary"%>
+                <a href="/blog" class="btn btn-secondary">Edit Blogs  </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-md-4 col-12">
+            <div class="card py-5 px-3">
+              <div class="card-body">
+                <h5 class="card-title">Publication</h5>
+                <%= link_to 'Add a new Publication', new_publication_path, class: "my-2 btn btn-primary"%>
+                <a href="/publications" class="btn btn-secondary">Edit Publications  </a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-md-4 col-12">
+            <div class="card py-5 px-3">
+              <div class="card-body">
+                <h5 class="card-title">Personnel</h5>
+                <p class="card-text text-dark"></p>
+                <%= link_to 'Add someone to the team!', new_personnel_path, class: "my-2 btn btn-primary"%>
+                <a href="/personnel" class="btn btn-secondary">Edit Personnel  </a>
+
+              </div>
+            </div>
+            </a>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

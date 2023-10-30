@@ -1,0 +1,131 @@
+html,body{
+    padding-top:2.5vw;
+    margin:0;
+
+}
+ul{
+    padding-left: 0.5%;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size:5vw;
+    font-weight:300;
+    text-align: center;
+}
+
+
+p a:hover{
+    cursor: pointer;
+    text-decoration:underline !important ;
+    /*font-weight: bolder;*/
+    color:#FBB859 !important
+
+    /* color:#69B085 !important; */
+}
+
+p a:visited{
+    text-decoration:underline !important;
+    /* color:#FBB859 !important */
+    color:#69B085 !important;
+
+}
+
+p a:link{
+    text-decoration:none;
+    color:black;
+
+}
+
+hr{
+    display: block;
+    margin-left:18%;
+    margin-right:18%;
+    border-style: inset;
+    border-width: 1px;
+    margin-bottom: 2vw;
+}
+
+p{
+
+    font-size:1.1vw;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#pub{
+    padding-left: 18%;
+    padding-right:18%;
+    padding-top: 2%;
+    text-align:center;
+
+}
+
+#text{
+    display: inline-block;
+    text-align : justify;
+}
+
+.parent-pagination{
+    text-align:center;
+}
+.pagination{
+    /*   position:absolute;
+      top:110vw;
+      padding-bottom: 5vw;
+    left:47vw; */
+    padding-bottom: 5vw;
+    display: inline-block;
+    text-align: center;
+}
+
+.instagram-yellow {
+  display: none;
+}
+
+.twitter-yellow {
+  display: none;
+}
+
+.instagram:hover > .instagram-green {
+  display: none;
+}
+.instagram:hover > .instagram-yellow {
+  display: inline;
+}
+
+.twitter:hover > .twitter-green {
+  display: none;
+}
+.twitter:hover > .twitter-yellow {
+  display: inline;
+}
+
+@media screen and (max-width: 800px) {
+      .footer-logo {
+    float: left;
+    margin-top: 17px;
+    margin-left: 5%;
+  }
+  
+    .footer>p>img{
+        width:10%;
+    }
+
+    p   {
+        font-size:10px; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    h1 {
+        padding-top:17vw;
+        font-size:8vw;
+    }
+
+    .pagination {
+
+        margin-top:5vw;
+
+
+    }
+}
+

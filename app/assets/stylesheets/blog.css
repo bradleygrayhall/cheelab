@@ -1,0 +1,294 @@
+
+html,body{
+  margin-top:2.5%;
+  text-align: center;
+  background-color: white;
+  font-family: "Roboto", sans-serif !important;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+h1 {
+  font-weight: 300;
+  font-family: "Raleway", sans-serif !important;
+  font-size: 72px;
+  top: 1.8vw;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+h3 {
+  top: 2.3vw;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif !important;
+  font-size: 19px;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+hr {
+  display: block;
+  margin-left: 18vw;
+  margin-right: 18vw;
+  top: 3.8vw;
+  border-style: inset;
+  position: relative;
+  border-width: 1px;
+  z-index: 0;
+}
+
+h4 {
+  font-weight: 300;
+  font-family: "Raleway", sans-serif ;
+  font-size: 5vw;
+  z-index: 1;
+  text-align: center;
+}
+
+
+
+h5 {
+  padding-bottom: 1vw;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3vw;
+  text-align: center;
+  z-index: 1;
+}
+
+
+
+.logo{
+  width:7.5%;
+  /* max-width: none; */
+
+}
+img{
+  width:66.5%;
+
+}
+
+input[type='file'] {
+  font-size: 0.8em;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+ul{
+  margin-right: 10%;
+}
+
+.navbar-brand{
+  margin-left: 15%;
+}
+
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+
+p{
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+  img{
+  max-width: 100%;
+  width: 65%;
+}
+
+.logo{
+  width:7.5%;
+  /* max-width: none; */
+
+}
+.btn-filter{
+  background-color: #F7F7F7;
+  border-color: grey;
+  border-width: 1px;
+}
+.btn-filter:hover{
+  background-color: grey;
+  color:white;
+
+}
+
+
+/* h1{
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+    font-size: 5vw;
+    z-index: 1;
+    text-align: center;
+} */
+
+h2,h1{
+  /* padding-top: 0; */
+  /* padding-bottom: 3% ; */
+  /* font-size: 2em; */
+  font-family: "Roboto", sans-serif;
+
+}
+
+hr{
+
+  margin:0 20%;
+  margin-bottom:5%;
+  display: block;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.iconify{
+  color:black ;
+  font-size: 1.7em;
+}
+
+div.carousel-inner {
+    /* height: 450px; */
+}
+div.carousel-inner img {
+    width: 80%;
+}
+.blog-posts{
+
+/* margin-bottom:10%; */
+}
+
+
+
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.blog-posts>div:nth-child(even) {
+  background-color: #F7F7F7;
+}
+
+.blog-post{
+
+  padding:5% 18% ;
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out; */
+
+}
+
+.footer {
+	/* position: absolute; */
+	text-align: center;
+
+	/* bottom: 0; */
+	width: 100%;
+  margin-top: 2em;
+	background-color: #f4f2f2;
+}
+
+.footer a {
+
+	font-size: 0.7em;
+  color: grey;
+  font-weight: bold;
+}
+
+.footer a:hover, .plus:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.plus{
+  font-size: 1.5em;
+  color: grey;
+
+}
+
+/* ----- PAGINATION SECTION ----- */
+
+.pagination {
+  padding-bottom: 5vw;
+    display: inline-block;
+  text-align:center;
+
+}
+
+.pagination a {
+    font-family:'Roboto', sans-serif;
+    color: black;
+
+
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #69B085;
+    color: white;
+    border: 1px solid #69B085 ;
+}
+
+.instagram-yellow {
+  display: none;
+}
+
+.twitter-yellow {
+  display: none;
+}
+
+.instagram:hover > .instagram-green {
+  display: none;
+}
+.instagram:hover > .instagram-yellow {
+  display: inline;
+}
+
+.twitter:hover > .twitter-green {
+  display: none;
+}
+.twitter:hover > .twitter-yellow {
+  display: inline;
+}
+
+@media (max-width:800px) {
+    .footer-logo {
+    float: left;
+    margin-top: 17px;
+    margin-left: 5%;
+  }
+  body{
+    margin-top:19%;
+  }
+
+  img{
+  width: 80%;
+}
+
+  h1{
+    font-size:1.8em;
+  }
+h2{
+  font-size:1.3em;
+  font-weight: bold;
+}
+
+p{
+  font-size:0.8em;
+
+}
+
+.footer>p>img{
+	width:13%;
+}
+}

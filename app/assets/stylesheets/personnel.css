@@ -1,0 +1,283 @@
+html,
+body {
+    margin-top:1.5%;
+    overflow-x:hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal-trigger{
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-weight: 300;
+  font-family: "Raleway", sans-serif ;
+  font-size: 5vw;
+  z-index: 1;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4vw;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+}
+
+h3 {
+  padding-bottom: 1vw;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3vw;
+  text-align: center;
+  z-index: 1;
+}
+
+hr {
+  display: block;
+  margin-left: 18vw;
+  margin-right: 15vw;
+  border-style: inset;
+  border-width: 1px;
+  z-index: 1;
+}
+
+#alumni-hr {
+  margin-top: 7%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 7%;
+}
+
+.card-reveal {
+  background-color: #eeeeee !important;
+  text-align: center;
+  opacity: 0.98;
+}
+
+.card-reveal p {
+  padding-left: 8.5%;
+  padding-right: 8.5%;
+}
+
+.card-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold !important;
+  font-size: 1.1em !important;
+}
+
+.card-content {
+  text-align: center;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 0.9em;
+  font-family: "Roboto", sans-serif;
+}
+
+.chee {
+  margin-top: 5%;
+  width: 25%;
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  background-color: #ededed;
+  box-shadow: 5px 5px 10px grey;
+  border: none;
+}
+
+.clear {
+  background-color: white;
+  box-shadow: none;
+  border: none;
+}
+
+.bianca:hover {
+  content: url("https://i.imgur.com/JQIiID2.jpg");
+}
+
+.dillon:hover {
+  content: url("https://i.imgur.com/uZ8325B.jpg");
+}
+
+.rebecca:hover {
+  content: url("https://i.imgur.com/rBqCNji.jpg");
+}
+
+/* .alexander:hover {
+  content: url("https://i.imgur.com/nhIx5b0.jpg");
+} */
+
+/* .kaitlyn:hover {
+  content: url("https://i.imgur.com/SPytLv9.jpg");
+} */
+
+/* .alex:hover {
+  content: url("https://i.imgur.com/2N46zXN.jpg");
+} */
+
+.emma:hover {
+  content: url("https://cdn.glitch.com/d158ad71-6fab-4a16-8439-3aa2acad57a1%2FEmmaLindale2.jpg?1551306786050");
+}
+
+.nikita:hover {
+  content: url("https://cdn.glitch.com/d158ad71-6fab-4a16-8439-3aa2acad57a1%2FNikita%202.jpg?v=1584285006043");
+}
+
+.diana:hover {
+  content: url("https://i.imgur.com/MhuwL4e.jpg");
+}
+
+.osayimwen:hover {
+  content: url("https://i.imgur.com/60uGrob.jpg");
+}
+
+.mikayla:hover {
+  content: url("https://i.imgur.com/s0j8Nx4.jpg");
+}
+
+.aditi:hover {
+  content: url("https://i.imgur.com/ypUjSbX.jpg");
+}
+
+.kayla:hover {
+  content: url("https://i.imgur.com/ZFkTHO7.jpg");
+}
+
+.duncan:hover {
+  content: url("https://i.imgur.com/kUKZwVA.jpg");
+}
+
+.melissa:hover {
+  content: url("https://i.imgur.com/D4kSRjw.jpg");
+}
+
+
+.zachary:hover {
+  content: url("https://cdn.glitch.com/d158ad71-6fab-4a16-8439-3aa2acad57a1%2FZachary2.jpg?v=1570726367726");
+}
+
+
+.persephone:hover {
+  content: url("https://cdn.glitch.com/d158ad71-6fab-4a16-8439-3aa2acad57a1%2FPersephone2.jpg?v=1570726371622");
+}
+
+.alumni {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+.alumni a{
+  font-weight:bold;
+  color:black;
+}
+
+.alumni a:hover{
+  text-decoration:underline;
+  color:red;
+}
+
+.modal {
+  width: 25%;
+}
+
+.modal-content img {
+  text-align: center;
+  margin-left: 7%;
+  margin-bottom: 4%;
+}
+
+body:after {
+  display: none;
+  content: url("https://i.imgur.com/JQIiID2.jpg")
+  url("https://i.imgur.com/D4kSRjw.jpg")
+  url("https://i.imgur.com/uZ8325B.jpg")
+  url("https://i.imgur.com/rBqCNji.jpg")
+  url("https://i.imgur.com/nhIx5b0.jpg")
+  url("https://i.imgur.com/SPytLv9.jpg")
+  url("https://i.imgur.com/2N46zXN.jpg")
+  url("https://cdn.glitch.com/d158ad71-6fab-4a16-8439-3aa2acad57a1%2FEmmaLindale2.jpg?1551306786050")
+  url("https://i.imgur.com/MhuwL4e.jpg")
+  url("https://i.imgur.com/60uGrob.jpg")
+  url("https://i.imgur.com/s0j8Nx4.jpg")
+  url("https://i.imgur.com/ypUjSbX.jpg")
+  url("https://i.imgur.com/ZFkTHO7.jpg")
+  url("https://i.imgur.com/kUKZwVA.jpg");
+}
+
+.instagram-yellow {
+  display: none;
+}
+
+.twitter-yellow {
+  display: none;
+}
+
+.instagram:hover > .instagram-green {
+  display: none;
+}
+.instagram:hover > .instagram-yellow {
+  display: inline;
+}
+
+.twitter:hover > .twitter-green {
+  display: none;
+}
+.twitter:hover > .twitter-yellow {
+  display: inline;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .footer-logo {
+    float: left;
+    margin-top: 17px;
+    margin-left: 5%;
+  }
+  .modal {
+    width: 90%;
+  }
+
+  .footer > p > img {
+    width: 10%;
+  }
+
+  h1 {
+    font-size: 12vw;
+    padding-top: 1vw;
+  }
+
+  h2 {
+    font-size: 10vw;
+  }
+
+
+  h3 {
+    padding-bottom: 5vw;
+    font-size: 4vw;
+  }
+
+  hr {
+    margin-left: 8vw;
+    margin-right: 5vw;
+  }
+
+
+  .chee {
+    width: 85%;
+  }
+
+
+}

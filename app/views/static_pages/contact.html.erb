@@ -1,0 +1,175 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag "contact" %>
+<% end %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>CONTACT US</h1>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container-fluid contact">
+  <div class="row">
+    <div class="col map col-lg-6  col-12">
+      <iframe scrolling="no" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1401.1471503760228!2d-75.6978286!3d45.3832338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce071ab2c04d59%3A0x84184844bcf890cc!2sHealth+Sciences+Building!5e0!3m2!1sen!2sca!4v1544195721999" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+    <div class="col col-lg-6  col-12 contact-text">
+
+      <h3>CHEELAB </h3>
+      <p>
+        <br/> Melissa Chee, PhD
+        <br/> melissa.chee@carleton.ca
+
+        <br/> +1 (613) 520-2600 ext. 5077
+        <br/>
+        <br/> Carleton University
+        <br/> Department of Neuroscience
+        <br/> 5309 Health Science Building
+        <br/> 1125 Colonel By Drive
+        <br/> Ottawa, ON, K1S 5B6
+        <br/> Canada
+        <br/>
+      </p>
+      <br/>
+
+    </div>
+  </div>
+</div>
+
+<hr class="avail-hr">
+
+<div class="pos container-fluid">
+  <h2>AVAILABLE POSITIONS</h2>
+
+  <!--Row 1 Starts-->
+  <div class="row posi">
+    <!--Position 1-->
+    <div class="col col-lg-3   col-12 apply">
+      <h5>Graduate Student</h5>
+      <br/>
+      <p> Please email melissa.chee@carleton.ca with a paragraph statement of your 
+        research interests; curriculum vitae; names of two references; and transcript. 
+      </p>
+      <br/>
+      <br/>
+      <p class="">Learn more about the <a href="https://graduate.carleton.ca/cu-programs/neuroscience-masters/"><strong>MSc in Neuroscience</strong></a> at Carleton University</p>
+      <p> Learn more about the <a href="https://graduate.carleton.ca/cu-programs/neuroscience-phd/"><strong>PhD in Neuroscience</strong></a> at Carleton University</p>
+    </div>
+
+    <!--Position 2-->
+    <div class="col col-lg-3   col-12  apply">
+      <h5>Honors Thesis Student</h5>
+      <br/>
+      <p>Learn more about the <a href="https://carleton.ca/neuroscience/4th-year-honours-projects/"><strong>honors project</strong></a> applications </p>
+      <p>Thank you for your interest!
+  <br><br>**We have now filled all available positions for 2023.**
+    </div>
+
+    <!--Position 3-->
+    <div class="col col-lg-3  col-12 apply">
+      <h5>I-CUREUS</h5>
+      <br/>
+          <p>
+            Please email melissa.chee@carleton.ca with a paragraph statement of
+            your research interests, career goals, and transcript. Please note
+            that only Neuroscience majors are currently considered.
+          </p>
+          <p class="apply-p pp">Learn more about <a href="https://carleton.ca/discoverycentre/funding-opportunities/icureus/""><strong>I-CUREUS</strong></a> at Carleton University</p>
+          <br/>
+          <p>
+            **Update: All available positions for 2022-2023 have now been
+            filled. Thank you for your interest.**
+          </p>
+    </div>
+
+  </div>
+  <!--Row 1 Ends-->
+
+  <!--Row 2 Starts-->
+  <div class="row posi" style="min-height: 600px;">
+
+    <!--Position 4-->
+    <div class="col col-lg-3  col-12 apply">
+      <h5>Work Study Student</h5>
+      <br/>
+      <p class="apply-p">There are additional opportunities to join the lab via the cuHIRE Work Study Program. Please contact the Awards Office to determine your eligibility.</p>
+      <br/>
+      <br/>
+      <p class="apply-p pp">Learn more about <a href="https://carleton.ca/awards/students/"><strong>Work Study</strong></a> at Carleton University</p>
+    </div>
+
+    <!--Position 5-->
+    <div class="col col-lg-3   col-12  apply">
+      <h5>ACT to Employ</h5>
+      <br />
+      <p>
+        For students with disabilities, please email
+        melissa.chee@carleton.ca to inquire about available positions.
+        Please indicate if you are a registered
+      <a href="https://carleton.ca/pmc/"><strong>PMC</strong></a> student.
+      </p>
+      <p class="apply-p pp">
+        Learn more about
+        <a href="https://carleton.ca/act/students/"
+              ><strong>ACT to Employ</strong>
+        </a>
+        at Carleton University
+      </p>
+      <br />
+      <br />
+      <p>** UPDATE: All positions are now filled for Summer 2023. **</p>
+    </div>
+
+    <!--Position 6-->
+    <div class="col col-lg-3  col-12 apply">
+      <h5>Research Volunteers</h5>
+      <br/>
+      <p class="apply-p">
+        Please email melissa.chee@carleton.ca with a paragraph 
+        statement of your research interests and career goals.<br/>
+        Thank you for your interest!
+      </p>
+      <br><br>**We have now filled all available positions for 2023.**
+      <br/>
+    </div>
+
+  </div>
+  <!--Row 2 Ends-->
+</div>
+
+<div class="modal open">
+  <div class="modal-overlay" onclick="closeModal()">
+  </div>
+  <div class="modal-card">
+    <div class="modal-body">
+      
+      <div class="close-modal">
+        <button class="close-button" onclick="closeModal()" >
+          <i class="fas fa-times close-button-x"></i>
+        </button>
+      </div>
+      
+      <div class="modal-content">
+        Thank you for your interest! 
+        </br>
+        Interview Bookings will be available starting February 10th.
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+<script>
+function closeModal() {
+  document.querySelector(".modal").style.display="none";
+}
+function openModal() {
+  document.querySelector(".modal").style.display="flex";
+}
+</script>  
+
+
+

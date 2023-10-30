@@ -1,0 +1,702 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  display: block;
+  margin-left: 18vw;
+  margin-right: 18vw;
+  top: 4vw;
+  border-style: inset;
+  position: relative;
+  border-width: 1px;
+  z-index: 0;
+}
+
+p {
+  font-weight: 500;
+  color: black;
+}
+
+h1 {
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  font-size: 5vw;
+  top: 5vw;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+h3 {
+  top: 5vw;
+  padding-bottom: 2.5vw;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+.ppl {
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+.neurobiology-text {
+  padding-top: 5%;
+  margin: 0 20%;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+}
+
+.mobile-instruction {
+  color: rgb(43, 13, 12);
+  display: none;
+}
+
+.card-holder {
+  background-color: rgba(100, 00, 200, 0);
+  display: flex;
+  flex-direction: row;
+}
+
+.card-default {
+  position: relative;
+  transition: transform 300ms ease-in-out 0s;
+  border: none;
+  border-radius: 5%;
+  width: 100%;
+  /*or whatever you choose*/
+  margin: auto;
+  display: inline-block;
+  max-width: 300px;
+  /*actual image width*/
+  height: auto;
+  /* maintain aspect ratio*/
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  max-width: 1039px;
+  /*actual image width*/
+  height: auto;
+  /* maintain aspect ratio*/
+  margin: auto;
+  /*optional centering of image*/
+}
+
+.card-uno {
+  background-color: rgb(201, 199, 199);
+  right: 16.5vw;
+  transform: rotate(-5deg);
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
+}
+
+.card-dos {
+  background-color: #f0da79;
+  right: 20vw;
+  bottom: 2vw;
+  transform: rotate(-1deg);
+  z-index: 2;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
+}
+
+.card-dos-invisible {
+  background-color: rgba(253, 90, 90, 0);
+  left: 20vw;
+  bottom: 2vw;
+  transform: rotate(-1deg);
+  z-index: 3;
+}
+
+.card-tres {
+  background-color: rgb(177, 202, 162);
+  right: 23.5vw;
+  transform: rotate(6deg);
+  z-index: 4;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
+}
+
+.card-tres-invisible {
+  background-color: rgba(1, 58, 245, 0);
+  left: 56.5vw;
+  transform: rotate(6deg);
+  z-index: 5;
+}
+
+.card-uno:hover {
+  transform: translate(4.2vw, -1.4vw) rotate(-3deg);
+}
+
+.card-uno:hover~.card-dos {
+  transform: translate(20.9vw, 1.4vw) rotate(3deg);
+}
+
+.card-uno:hover~.card-tres {
+  transform: translate(13.9vw, 2.4vw) rotate(8deg);
+}
+
+.card-dos-invisible:hover {
+  transform: translate(0vw, -2.1vw) rotate(1deg);
+}
+
+.card-dos-invisible:hover~.card-dos {
+  transform: translate(0vw, -2.1vw) rotate(1deg);
+}
+
+.card-dos-invisible:hover~.card-tres {
+  transform: translate(8.34vw, 1.4vw) rotate(6deg);
+}
+
+.card-dos-invisible:hover~.card-uno {
+  transform: translate(-8.34vw, 1.4vw) rotate(-6deg);
+}
+
+.card-tres-invisible:hover {
+  transform: translate(-3.5vw, -15px) rotate(4deg);
+}
+
+.card-tres-invisible:hover~.card-tres {
+  transform: translate(-3.5vw, -15px) rotate(4deg);
+}
+
+.card-tres-invisible:hover~.card-dos-invisible {
+  transform: translate(-17.4vw, 1.4vw) rotate(-3deg);
+}
+
+.card-tres-invisible:hover~.card-dos {
+  transform: translate(-17.4vw, 1.4vw) rotate(-3deg);
+}
+
+.card-tres-invisible:hover~.card-uno {
+  transform: translate(-11.1vw, 1.4vw) rotate(-7deg);
+}
+
+/* Modal Starts */
+
+.modal-grey {
+  background-color: #e0dfd2;
+  position: fixed;
+  z-index: 30;
+  top: 3.5em;
+  bottom: 0;
+  width: 100vw;
+  display: none;
+  overflow: auto;
+}
+
+.brain-map-image-wrap {
+  width: 83%;
+  /*or whatever you choose*/
+  margin: auto;
+  display: block;
+  max-width: 100vw;
+  /*actual image width*/
+  height: auto;
+  /* maintain aspect ratio*/
+}
+
+.brain-map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* maintain aspect ratio*/
+  margin: auto;
+  /*optional centering of image*/
+}
+
+.homeostasis-mobile {
+  display: none;
+}
+
+.close-1 {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.close-1:hover {
+  color: #666;
+}
+
+/* Modal Yellow Starts */
+.nutrition-mobile {
+  display: none;
+}
+
+.modal-yellow {
+  background-color: #f8de8c;
+  position: fixed;
+  z-index: 30;
+  top: 3.5em;
+  bottom: 0;
+  width: 100vw;
+  display: none;
+  overflow: auto;
+  justify-content: flex-start;
+}
+
+.nutrition {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.nutrition-text {
+  background-color: #fbedaf;
+  border-radius: 5%;
+  padding: 3.5% 5%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14pt;
+  width: 80vw;
+  margin-right: 14vw;
+  margin-top: 8vw;
+}
+
+.nutrition-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 28pt;
+}
+
+.dessert-image-wrap {
+  width: 63%;
+  display: block;
+  max-width: 100vw;
+  height: auto;
+  /* maintain aspect ratio*/
+  margin-left: 6vw;
+  margin-right: 3vw;
+  align-self: center;
+}
+
+.dessert-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* maintain aspect ratio*/
+  margin: 0 auto;
+  /*optional centering of image*/
+}
+
+.close-2 {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.close-2:hover {
+  color: #666;
+}
+
+/* Yellow Modal Ends */
+
+.modal-green {
+  background-color: rgb(177, 202, 162);
+  position: fixed;
+  z-index: 30;
+  top: 3.5em;
+  bottom: 0;
+  width: 100vw;
+  display: none;
+  overflow: auto;
+}
+
+.green-modal-contents {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hedonic-content {
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  margin-top: -5vw;
+  margin-right: -10vw;
+}
+
+.hedonic-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14pt;
+}
+
+.hedonic-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 28pt;
+}
+
+.brain-animation {
+  width: 48vw;
+  height: 48vw;
+  border-style: none;
+  float: right;
+  shape-outside: polygon(0% 0%,
+      100% 0%,
+      100% 100%,
+      59% 100%,
+      50% 82%,
+      28% 77%,
+      23% 58%,
+      0 51%);
+}
+
+.close-3 {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.close-3:hover {
+  color: #666;
+}
+
+/* Modal Ends */
+
+.partners-container {
+  position: relative;
+  top: 5vw;
+  z-index: -1;
+}
+
+.partners {
+  height: auto;
+  width: 10vw;
+}
+
+.hr-partners {
+  position: relative;
+  margin-left: 0;
+  margin-right: 1vw;
+  margin-bottom: 4vw;
+}
+
+.h3-partners {
+  font-size: 2rem;
+  margin-bottom: 7vw;
+}
+
+.col-lg-2,
+.col-md-6 {
+  padding: 3% 5%;
+}
+
+.circular-logo {
+  height: auto;
+  width: 7vw;
+  position: relative;
+  bottom: 3vw;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none !important;
+
+  color: black !important;
+}
+
+a:visited {
+  text-decoration: none !important;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.instagram-yellow {
+  display: none;
+}
+
+.twitter-yellow {
+  display: none;
+}
+
+.instagram:hover>.instagram-green {
+  display: none;
+}
+
+.instagram:hover>.instagram-yellow {
+  display: inline;
+}
+
+.twitter:hover>.twitter-green {
+  display: none;
+}
+
+.twitter:hover>.twitter-yellow {
+  display: inline;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-logo {
+    float: left;
+    margin-top: 17px;
+    margin-left: 5%;
+  }
+
+  .footer>p>img {
+    width: 10%;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  p {
+    font-size: 10px;
+    /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  h1 {
+    padding-top: 5vw;
+    font-size: 3rem;
+  }
+
+  .mobile-instruction {
+    display: flex;
+  }
+
+  .card-holder {
+    flex-direction: column;
+  }
+
+  .card-default {
+    position: static;
+    rotate: 0deg;
+    margin: 0 auto 8% auto;
+
+    box-shadow: -12px 12px 21px #b3b3b3, 12px -12px 21px #ffffff;
+  }
+
+  .card-dos-invisible,
+  .card-tres-invisible {
+    display: none;
+  }
+
+  .card-uno,
+  .card-dos,
+  .card-tres {
+    transform: rotate(0deg);
+  }
+
+  .card-uno:hover {
+    transform: translate(0, 0) rotate(0);
+  }
+
+  .card-uno:hover~.card-dos {
+    transform: translate(0, 0) rotate(0);
+  }
+
+  .card-uno:hover~.card-tres {
+    transform: translate(0, 0) rotate(0);
+  }
+
+  /* Grey Modal Starts */
+  .brain-map-image-wrap {
+    display: none;
+  }
+
+  .modal-grey {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .homeostasis-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .homeostasis-text {
+    background-color: #f0f0ea;
+    border-radius: 5%;
+    padding: 5%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 14pt;
+    width: 80vw;
+    margin-bottom: 10vw;
+  }
+
+  .homeostatic-heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 28pt;
+  }
+
+  .brain-map-image-wrap-mobile {
+    width: 95%;
+    /*or whatever you choose*/
+    display: block;
+    max-width: 100vw;
+    /*actual image width*/
+    height: auto;
+    /* maintain aspect ratio*/
+    margin: 10vw auto;
+    /*optional centering of image*/
+  }
+
+  .brain-map-image-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* maintain aspect ratio*/
+    margin: 0 auto;
+    /*optional centering of image*/
+  }
+
+  /* Grey Modal Ends */
+
+  /* Yellow Modal Starts */
+  .nutrition {
+    display: none;
+  }
+
+  .modal-yellow {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .nutrition-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .nutrition-text-mobile {
+    background-color: #fbedaf;
+    border-radius: 5%;
+    padding: 5%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 14pt;
+    width: 80vw;
+    margin-bottom: 10vw;
+  }
+
+  .nutrition-heading-mobile {
+    font-family: "Roboto", sans-serif;
+    font-size: 28pt;
+  }
+
+  .dessert-image-wrap-mobile {
+    width: 70%;
+    /*or whatever you choose*/
+    display: block;
+    max-width: 100vw;
+    /*actual image width*/
+    height: auto;
+    /* maintain aspect ratio*/
+    margin: 6vw 10vw 6vw 0;
+    /*optional centering of image*/
+  }
+
+  .dessert-image-mobile {
+    display: block;
+    width: 100%;
+    /* max-width: ;*/
+    /*actual image width*/
+    height: auto;
+    /* maintain aspect ratio*/
+    margin: 0 auto;
+    /*optional centering of image*/
+  }
+
+  /* Yellow Modal Ends */
+
+  /* Green Modal Starts */
+  .hedonic-space {
+    display: none;
+  }
+
+  .hedonic-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .hedonic-text {
+    background-color: #E7EEDB;
+    border-radius: 5%;
+    padding: 5%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 14pt;
+    width: 80vw;
+    margin-bottom: 10vw;
+  }
+
+  .homeostatic-heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 28pt;
+  }
+
+  .brain-animation {
+    width: 90vw;
+    height: 90vw;
+    margin-right: -20vw;
+    margin-top: 10vw;
+    margin-bottom: -10vw;
+  }
+
+  /* Green Modal Ends */
+
+  .partners-container {
+    position: static;
+    margin: 5% auto;
+    padding: 0 17%;
+  }
+
+  .partners {
+    width: 30vw;
+  }
+
+  .circular-logo {
+    position: relative;
+    bottom: 1vw;
+    width: 15vw;
+    left: 7vw;
+  }
+
+  .h3-partners {
+    font-size: 2rem;
+    margin-bottom: 13vw;
+    margin-top: 10vw;
+  }
+}

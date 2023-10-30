@@ -1,0 +1,397 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag "brainfreeze_index" %>
+<% end %>
+
+    <!-- Header Section -->
+    <div class="container-fluid pr-md-5 pt-md-1 mt-md-1 pt-5 mt-4">
+      <div class="row">
+        <div class="col col-12 text-center">
+          <img
+            src="../assets/Brain Freeze profile_2022.png"
+            class="brain-badge img-fluid"
+            alt="Brain Freeze Badge"
+          />
+        </div>
+      </div>
+
+      <div class="row px-3 px-md-0">
+        <div class="col col-md-12 col-12 text-md-center text-left">
+          <h1 class="now mt-3 mb-4 pt-0"><b>BRAIN FREEZE 2022</b></h1>
+          <h3>
+            Annual winter fundraiser to promote brain health and mental health
+            through active living.
+            <br class="mobile-gone" />Brain Freeze benefits local groups to
+            support mental health in our community.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <br/>
+    <br/>
+
+    <!-- Main Content Three Rows Section -->
+    <p style="text-align: center;">Together we raised $4,033 for Food for Thought. Thank you everyone! </p>
+    <div class="container-fluid middle-div text-center" style="padding: 1% 10%; padding-left: 15%">
+      <div class="row justify-content-center">
+        <div class="col col-md-2 text-right pt-5 p-0">
+
+              <!--Total Number of Steps starts -->
+              <div class="row justify-content-center text-center">
+                <div style="font-size:32px; width:190px; border: solid #4A9546; text-align:right; padding:0; margin-right:0;">
+                <%= @total_steps %>
+                </div>
+              </div>
+              <!--Total Number of Steps ends -->
+
+              <!--Text above footmeter starts -->
+              <div class="row justify-content-center text-center">
+                <div style="font-weight:bold; padding-top:5%;">out of 1,000,000 steps!</div>
+              </div>
+              <!--Text above footmeter ends -->
+
+              <!--Footmeter starts-->
+              <div class="row justify-content-center text-center">
+                <div class="col">
+                  <div class="foot-div" style="background-color: #4A9546; height: <%= @meter_height %>%;">
+                  </div>
+                  <img
+                    src="../assets/footmeter 1.png"
+                    class="foot-pic img-fluid"
+                  />
+                </div>    
+              </div>
+              <!--Footmeter ends-->
+        </div>
+
+        <div class="col-md-6" style="padding: 10px 80px;">
+          <p style="font-weight: normal; text-align: center">
+            <div style="font-size: 20px;">
+              Please
+              <a style="color: red; font-weight: bold;" href="https://www.canadahelps.org/en/pages/brain-freeze-2022/" target="_blank"
+              >DONATE HERE</a
+              >.
+            </div>
+            </br>
+            Let's move together to reach 1,000,000 steps! Use a fitness tracker or a 
+            <a style="color: red; font-weight: bold;" href="https://goodcalculators.com/activity-to-steps-converter/" target="_blank"
+              >step calculator</a
+            >
+            to convert your steps. Multiple entries allowed and encouraged!
+            <br />
+            <br />
+            <span style="font-size: 20px;">
+              Log your activities and steps
+              <span class="annoying_hover_effect"
+                style="color: red; font-weight: bold;"
+                data-toggle="modal"
+                data-target="#loggingActivity"
+              >HERE</span>
+            </span>
+            <br />
+            <br />
+            <strong>Who are we supporting this year?</strong>
+            <br />
+            Your donation will support
+            <a style="color: red; font-weight: bold;" href="https://www.foodforthought.cafe" target="_blank">Food for Thought</a>, an Ottawa charity that distributes hot
+            meals to people in need.
+            <br />    
+            <br />
+            Any amount is appreciated. Tax receipts immediately available
+            for donations over $3.
+            <br />
+            <br />
+            Thank you for supporting Food for Thought!
+            <br />
+            <br />
+            <strong>What do I do?</strong>
+            <br />
+            <strong>Virtual: Saturday March 26</strong>
+            <br />
+            Log your activities and steps
+            <span class="annoying_hover_effect"
+              style="color: red; font-weight: bold;"
+              data-toggle="modal"
+              data-target="#loggingActivity"
+            >here</span>. Karate, hockey, walk, shoveling, basically all activities are
+            eligible. Use a fitness tracker or
+            <a style="color: red; font-weight: bold;" href="https://goodcalculators.com/activity-to-steps-converter/" target="_blank"
+              >step calculator</a
+            >
+            to convert your steps. Multiple entries allowed and encouraged!
+            <br />
+            <br />
+            <strong>In person: Sunday March 27</strong>
+            <br />
+            Come together for a run/walk starting at Carleton University.
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <!--Activity Log Starts-->
+          <div class="row justify-content-center text-center">
+            <p style="font-size:24px; font-weight:200;">Activity Log</p>
+            <div style="border: 0.1px solid #83A48B; overflow-y: scroll; height: 500px; padding:5%; min-width:250px;">
+              <% @activity_logs.each do |activity_log| %>
+                <p>
+                  <span style="font-weight:bold;"><%= activity_log.name %></span>
+                  <span style="font-weight:normal;">from</span> 
+                  <span style="font-weight:bold;"><%= activity_log.location %> </span>
+                  <span style="font-weight:normal;">moved</span> 
+                  <span style="font-weight:bold; color:#4A9546;"><%= activity_log.number_of_steps %></span>
+                  <span style="font-weight:normal;">steps by</span> 
+                  <span style="font-weight:bold;"><%= activity_log.activity %></span>
+                </p>
+              <% end %>
+            </div>
+                                  </div>
+                                  <!--Activity Log Ends-->
+
+
+
+                                  <!--Twitter Feed Starts-->
+                                  <div class="row twitter-box mt-5">
+                                    <a
+                                      class="twitter-timeline"
+                                      href="https://twitter.com/CU_BrainFreeze?ref_src=twsrc%5Etfw"
+                                      >Tweets by CU_BrainFreeze</a
+                                    >
+                                    <script
+                                      async
+                                      src="https://platform.twitter.com/widgets.js"
+                                      charset="utf-8"
+                                    ></script>
+                                  </div>
+                                  <!--Twitter Feed Ends-->
+                    </div>
+      </div>
+    </div>
+    
+    <!--Sponsers Section-->
+    <div class="container-fluid">
+      <hr class="mt-5" />
+
+      <div class="row">
+        <div class="col-12 justify-content-center text-center">
+          <div style="font-family: 'Roboto', sans-serif; font-weight: bold">Thank you to our sponsors</div>
+          <img
+            src="../assets/Brain Freeze sponsors_2022.png"
+            class="sponsors"
+            alt=""
+            width="800px"
+            
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--Past Brain Freeze Posters-->
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h2 class="h3-partners">PAST BRAIN FREEZE</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center justify-content-center text-center">
+          <div class="col-md-1 col-lg-2 col-sm-6 justify-content-center text-center">
+            <figure>
+              <a href="/brainfreeze/2021">
+                <img
+                  class="poster banana"
+                  src="../assets/brainfreeze2021.png"
+                  target="_blank"
+                />
+              </a>
+              <figcaption>2021</figcaption>
+            </figure>
+          </div>
+
+          <div class="col-md-1 col-lg-2 col-sm-6 justify-content-center text-center">
+            <figure>
+              <a
+                href="https://twitter.com/thecheelab/status/1234190963440005121"
+                target="_blank"
+              >
+                <img class="poster banana" src="../assets/brainfreeze2020.png" />
+              </a>
+              <figcaption>2020</figcaption>
+            </figure>
+          </div>
+
+          <div class="col-md-1 col-lg-2 col-sm-6 justify-content-center text-center">
+            <figure>
+              <a
+                href="https://science.carleton.ca/2019/chee-labs-brain-freeze-5k-and-relay-a-huge-success/"
+                target="_blank"
+              >
+                <img class="poster banana" src="../assets/brainfreeze2019.png" />
+              </a>
+              <figcaption>2019</figcaption>
+            </figure>
+          </div>
+      </div>
+    </div>
+
+
+
+<!--Modal Form + Submit Button Starts-->
+          <div
+            class="modal fade"
+            id="loggingActivity"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Log your Steps
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Thank you for your interest in <em>Brain Freeze</em>! Our event is now closed.
+                  <br />
+                  <br />
+
+          <!--Comment out activity log starts
+                  <%= form_with(model: @activity_log) do |form| %>  
+                    <fieldset>
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          name="name"
+                          placeholder="Name"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="activity">Activity</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="activity"
+                          name="activity"
+                          placeholder="Activity"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="location">Location</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="location"
+                          name="location"
+                          placeholder="Location"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="number_of_steps">Steps</label>
+                        <input
+                          class="form-control"
+                          type="number"
+                          id="number_of_steps"
+                          name="number_of_steps"
+                          data-bind="value:replyNumber"
+                          placeholder="Number of Steps"
+                        />
+                      </div>
+
+                      <div>
+                        <span style="text-decoration: underline;">For draw prizes only:</span>
+                        <br>
+                        All activity entries by Saturday March 26 at 11:59 pm will be entered for a draw prize.
+                        Please provide your contact information if you would like to 
+                        be entered into the draw. Your contact information will remain
+                        confidential and will NOT be displayed.
+                        <br>
+                        <br>
+                      </div> 
+
+                      <div class="form-group">
+                        <label for="email" class="active">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                      </div>                      
+
+                      <div class="form-group">
+                        <label for="phone_number" class="active">Phone Number:</label>
+                        <input type="tel" class="form-control" id="phone_number" name="phone_number" placeholder="Phone Number">
+                      </div>
+                      
+                      <div>
+                        Individuals below receive an extra draw prize entry:
+                        <br>
+                      </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="child" name="child" value="1"> 
+                      <label class="form-check-label" for="child">
+                        I am under the age of 12
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="donated" name="donated" value="1"> 
+                      <label class="form-check-label" for="donated">
+                        I donated! <a href="https://www.canadahelps.org/en/pages/brain-freeze-2022/">(link to CanadaHelps page)</a>
+                      </label>
+                    </div>
+                    <br>
+
+                      <button type="submit" class="btn btn-primary">
+                        Submit
+                      </button>
+                    </fieldset>
+                  <% end %>
+
+          Comment out activity log ends-->
+
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--Modal Form + Button Ends-->
+
+<div class="row fixed-bottom desktop-gone">
+  <div class="col col-12">
+    <a
+      href="https://www.canadahelps.org/en/pages/brain-freeze-2022/" target="_blank"
+      class="btn btn-lg btn-block p-3 btn-primary" style="background:#761B15; border:#761B15;"
+    >Make a Donation</a
+    >
+  </div>
+
+  <div class="col col-12">
+    <a
+      href="#modal"
+      data-toggle="modal"
+      data-target="#loggingActivity"
+      class="btn btn-lg btn-block p-3 btn-secondary" style="background:#FCE35B;"
+    >Log your steps!</a
+    >
+  </div>
+</div>

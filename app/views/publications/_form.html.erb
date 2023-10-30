@@ -1,0 +1,68 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag "scaffolds" %>
+<% end %>
+
+<div class="container">
+<%= form_with(model: publication, local: true) do |form| %>
+  <% if publication.errors.any? %>
+    <div id="error_explanation alert alert-danger">
+      <h2><%= pluralize(publication.errors.count, "error") %> prohibited this publication from being saved:</h2>
+
+      <ul>
+        <% publication.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= form.label :authors %>
+    <%= form.text_field :authors, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :year %>
+    <%= form.text_field :year, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :title %>
+    <%= form.text_field :title, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :journal %>
+    <%= form.text_field :journal, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :volume %>
+    <%= form.text_field :volume, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :first_page %>
+    <%= form.text_field :first_page, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :last_page %>
+    <%= form.text_field :last_page, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :hyperlink %>
+    <%= form.text_field :hyperlink, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :sort_date %>
+    <%= form.text_field :sort_date, type: :date, class:"form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+</div>

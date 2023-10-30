@@ -1,0 +1,72 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag "scaffolds" %>
+<% end %>
+
+<div class="container pt-0">
+
+
+<%= form_with(model: personnel, local: true) do |form| %>
+  <% if personnel.errors.any? %>
+    <div id="error_explanation alert alert-danger">
+      <h2><%= pluralize(personnel.errors.count, "error") %> prohibited this personnel from being saved:</h2>
+
+      <ul>
+        <% personnel.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class=" form-group" >
+    <%= form.label :name %>
+    <%= form.text_field :name ,class:"form-control"%>
+  </div>
+
+  <div class=" form-group">
+    <%= form.label :sort_name, "Last Name for Sorting"  %>
+    <%= form.text_field :sort_name ,class:"form-control"%>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :role %>
+    <%= form.text_field :role ,class:"form-control"%>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :education %>
+    <%= form.text_area :education, class: "form-control"%>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :awards %>
+    <%= form.text_area :awards ,class: "form-control"%>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :publications %>
+    <%= form.text_area :publications ,class: "form-control"%>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :alumni %>
+    <%= form.check_box :alumni ,class: "form-group"%>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :first_image %>
+    <%= form.file_field :first_image ,class: "form-control"%>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :second_image %>
+    <%= form.file_field :second_image ,class: "form-control"%>
+  </div>
+
+
+  <div class="actions form-group">
+    <%= form.submit class:"btn btn-primary"%>
+  </div>
+<% end %>
+
+</div>

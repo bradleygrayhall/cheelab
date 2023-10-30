@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @publication.authors %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @publication.year %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @publication.title %>
+</p>
+
+<p>
+  <strong>Journal:</strong>
+  <%= @publication.journal %>
+</p>
+
+<p>
+  <strong>Volume:</strong>
+  <%= @publication.volume %>
+</p>
+
+<p>
+  <strong>First page:</strong>
+  <%= @publication.first_page %>
+</p>
+
+<p>
+  <strong>Last page:</strong>
+  <%= @publication.last_page %>
+</p>
+
+<p>
+  <strong>Hyperlink:</strong>
+  <%= @publication.hyperlink %>
+</p>
+
+<p>
+  <strong>Sort date:</strong>
+  <%= @publication.sort_date %>
+</p>
+
+<%= link_to 'Edit', edit_publication_path(@publication) %> |
+<%= link_to 'Back', publications_path %>

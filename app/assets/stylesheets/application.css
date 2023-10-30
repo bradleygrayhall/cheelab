@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= stub scaffolds.css
+ *= stub research.css
+ *= stub personnel.css
+ *= stub blog.css
+ *= stub publications.css
+ *= stub home.css
+ *= stub contact.css
+ *= stub brainfreeze.css
+ *= stub brainfreeze_index.css
+
+ */
+
+.pagination {
+    display: inline-block;
+    text-align:center;
+
+}
+
+p{
+    font-weight:normal;
+}
+
+.pagination a, .pagination span,.current {
+    font-family:'Roboto', sans-serif;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none !important;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.current {
+    background-color:#69B085 ;
+    color: white;
+    border: 1px solid #69B085 ;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.instagram-yellow {
+  display: none;
+}
+
+.twitter-yellow {
+  display: none;
+}
+
+.instagram:hover > .instagram-green {
+  display: none;
+}
+.instagram:hover > .instagram-yellow {
+  display: inline;
+}
+
+.twitter:hover > .twitter-green {
+  display: none;
+}
+.twitter:hover > .twitter-yellow {
+  display: inline;
+}
+
+@media screen and (max-width: 800px) {
+
+    .pagination {
+        margin-top:15vw;
+    }
+}

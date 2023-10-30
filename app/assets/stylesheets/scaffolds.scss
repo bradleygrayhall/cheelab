@@ -1,0 +1,46 @@
+html,
+body {
+  margin-top:1.5%;
+  overflow-x:hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h1{
+  text-align: center;
+  padding-top: 5%;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif ;
+  font-size: 5vw;
+}
+
+
+input[type='file'] {
+  font-size: 0.8em;
+}
+
+textarea {
+  resize: both !important;
+}
+
+.instagram-yellow {
+  display: none;
+}
+
+.twitter-yellow {
+  display: none;
+}
+
+.instagram:hover > .instagram-green {
+  display: none;
+}
+.instagram:hover > .instagram-yellow {
+  display: inline;
+}
+
+.twitter:hover > .twitter-green {
+  display: none;
+}
+.twitter:hover > .twitter-yellow {
+  display: inline;
+}

@@ -1,0 +1,28 @@
+<ul class="pl-2">
+    <li class="logo" style="float:left"><a href="/"><%= image_tag "logo_green", width:"70",alt:"Cheelab" %></a></li>
+    <li class="full" style="float:right">
+      <%= link_to "Log Out", destroy_user_session_path, method: :delete if user_signed_in?%>
+    </li>
+    <li class="full" style="float:right"><a href="/contact">Contact us</a></li>
+    <li class="full" style="float:right"><a href="/brainfreeze">Brain Freeze</a></li>
+    <li class="full" style="float:right"><a href="/blog">Blog</a></li>
+    <li class="full" style="float:right"><a href="/publications">Publications</a></li>
+    <li class="full" style="float:right"><a href="/research">Research</a></li>
+    <li class="full" style="float:right"><a href="/personnel">Personnel</a></li>
+    <li class="full" style="float:right"><a href="/">Home</a></li>
+    <li class="dropdown">
+        <a class="dropbtn" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    </li>
+</ul>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#818181;">&times;</a>
+    <a href="/" class="active">Home</a>
+    <a href="/personnel">Personnel</a>
+    <a href="/research">Research</a>
+    <a href="/publications">Publications</a>
+    <a href="/blog">Blog </a>
+    <a href="/brainfreeze">Brain Freeze</a>
+    <a href="/contact">Contact Us</a>
+    <%= link_to "Log Out", destroy_user_session_path, method: :delete if user_signed_in?%>
+</div>

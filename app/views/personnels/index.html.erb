@@ -1,0 +1,163 @@
+<% content_for :head do %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <%= stylesheet_link_tag "personnel" %>
+<% end %>
+
+<h1>PERSONNEL</h1>
+<h3>Meet the Team</h3>
+<hr/>
+<% if @chee %>
+  <div class="container chee">
+
+    <%= link_to 'Add a New Personnel', new_personnel_path, class: "mb-5 ml-5 btn btn-large btn-primary" if user_signed_in? %>
+
+    <div class="card ">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img onMouseOver="this.src='<%= url_for @chee.second_image if @chee.second_image.attached? %>'"
+             onMouseOut="this.src='<%= url_for @chee.first_image if @chee.first_image.attached? %>'"
+             src="<%= url_for @chee.first_image if @chee.first_image.attached? %>">
+      </div>
+      <div class="card-content p-2 pb-4">
+        <span class="card-title activator grey-text text-darken-4 m-1"><i class="material-icons">  expand_less  </i><br/><%= @chee.name %> </span>
+        <p class="mb-2"><%= @chee.role %></p>
+
+        <% if user_signed_in?  %>
+          <div class="btn-group mt-3" role="group">
+            <%= link_to 'Edit', edit_personnel_path(@chee), class: "btn  text-white" %>
+            <%= button_to 'Destroy', @chee, method: :delete, class: "btn red  text-white", data: { confirm: 'Are you sure?'
+            }%>
+          </div>
+        <% end %>
+
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4"><i class="material-icons mb-5"> expand_more</i><br/><%= @chee.name %></span>
+        <br/>
+        <% if (@chee.awards) %>
+          <br/> <strong>Position</strong> <!--Changed the name of awards to Position-->
+          <br/><%= @chee.awards %>
+        <% end %>
+        <% if (@chee.education) %>
+          <br/>
+          <br/><strong>Education</strong>
+          <br/><%= @chee.education %>
+          <br/>
+        <% end %>
+        <% if (@chee.publications) %>
+          <br/>
+          <p><strong>My favourite...</strong>
+            <br/><%= @chee.publications %>
+        <% end %>
+        </p>
+      </div>
+    </div>
+
+  </div>
+<% end %>
+
+<div class="container">
+  <div class="row">
+    <% @personnel.each do |personnel| %>
+      <div class="col col-12 col-md-4">
+        <div class="card ">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img onMouseOver="this.src='<%= url_for(personnel.second_image) if personnel.second_image.attached? %>'"
+                 onMouseOut="this.src='<%= url_for(personnel.first_image) if personnel.first_image.attached? %>'"
+                 src="<%= url_for(personnel.first_image) if personnel.first_image.attached? %>">
+          </div>
+          <div class="card-content p-2 pb-4">
+               <span class="card-title activator grey-text text-darken-4 m-1">
+               <i class="material-icons">  expand_less  </i><br/><%= personnel.name %> </span>
+            <p class="mb-2"><%= personnel.role %></p>
+
+            <% if user_signed_in?  %>
+              <div class="btn-group mt-3" role="group">
+                <%= link_to 'Edit', edit_personnel_path(personnel), class: "btn  text-white" %>
+                <%= button_to 'Destroy', personnel, method: :delete, class: "btn red  text-white", data: { confirm: 'Are you sure?'
+                }%>
+              </div>
+            <% end %>
+
+          </div>
+          <div class="card-reveal">
+               <span class="card-title grey-text text-darken-4">
+                 <i class="material-icons mb-5"> expand_more</i><br/><%= personnel.name %></span>
+            <br/>
+            <% if (!personnel.education.blank?) %>
+              <p><strong>Program</strong> <!--Changed the name of education to program -->
+                <br/><%= personnel.education %>
+            <% end %>
+            <% if (!personnel.awards.blank?) %>
+              <br/>
+              <br/> <strong>Awards</strong>
+              <br/><%= personnel.awards %>
+            <% end %>
+            <% if (!personnel.publications.blank?) %>
+              <br>
+              <br><strong>My favourite...</strong> <!--Changed the name of publications to My Favourite.. -->
+              <br/><%= personnel.publications %>
+            <% end %>
+            </p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+
+  <hr id="alumni-hr">
+  <div class="container alumni">
+    <h2 id>
+      ALUMNI
+    </h2>
+    <div class=" mt-5 row">
+
+
+      <%@alumni.each_with_index do |alumni, i| %>
+        <div class="col col-md-4 col-12 mb-5 mb-lg-0">
+          <!-- Modal Trigger -->
+          <a class=" modal-trigger" href="#modal<%= i %>">
+            <%= alumni.name %>
+          </a>
+
+          <!-- Modal Structure -->
+          <div id="modal<%= i %>" class="modal">
+            <div class="modal-content">
+              <h5><%= alumni.name %></h5>
+              <p> <%= alumni.education %></p>
+              <img src="<%= url_for(alumni.first_image) if alumni.first_image.attached? %>" width="85%">
+              <div class="modal-body">
+                <% if (alumni.education) %>
+                  <br>
+                  <strong>Education</strong>
+                  <br> <%= alumni.education %>
+                <% end %>
+                <% if (alumni.awards) %>
+                  <br>
+                  <br><strong>Awards</strong>
+                  <br><%= alumni.awards %>
+                <% end %>
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <%= link_to 'Edit', edit_personnel_path(alumni), class: "btn  text-white " if user_signed_in? %>
+              <%= button_to 'Destroy', alumni, method: :delete, class: "btn red  text-white mx-4", data: { confirm: 'Are
+               you sure?' } if user_signed_in? %>
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">CLOSE</a>
+            </div>
+          </div>
+
+        </div>
+      <% end %>
+    </div>
+  <!--<img src="assets/group-photos/1.jpg" width="500px">-->
+  </div>
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+

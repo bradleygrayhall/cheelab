@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  authors: "John"
+  year: "2020"
+  title: "Effect of sugar on rats"
+  journal: "Carleton"
+  volume: "30"
+  first_page: "3"
+  last_page: "15"
+  hyperlink: "https://carleton-journal/rats/sugar"
+  sort_date: Date.parse("2021-06-05")
+
+two:
+  authors: "Susan"
+  year: "2019"
+  title: "Effect of barbecue on rats"
+  journal: "The Smithsonian"
+  volume: "19"
+  first_page: "431"
+  last_page: "542"
+  hyperlink: "https://the-smithsonian/rats/barbecue"
+  sort_date: Date.parse("2021-12-12")
