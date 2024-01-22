@@ -4,10 +4,9 @@
 services:
   - type: web # valid values: https://render.com/docs/yaml-spec#type
     name: cheelab
-    plan: free
     env: docker # valid values: https://render.com/docs/yaml-spec#environment
     dockerfilePath: Dockerfile.render
-    plan: starter # optional; defaults to starter
+    plan: free # optional; defaults to starter
     numInstances: 1
     domains: # custom domains
       - 'www.cheelab.ca'
