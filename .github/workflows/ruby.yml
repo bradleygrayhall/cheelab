@@ -1,0 +1,59 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
+        with:
+          ruby-version: 2.7.1
+          bundler-cache: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+          
+      - name: Install dependencies
+        env:
+            RAILS_ENV: test
+        run: |
+          bundle install
+          bin/rails javascript:install:esbuild
+
+      - name: Install packages
+        run: |
+          yarn install
+
+      - name: Build Esbuild
+        run: yarn build
+        
+      - name: Build App
+        env:
+          RAILS_ENV: test
+        run: bin/rails db:migrate:reset
+        
+      - name: Run Tests
+        env:
+          RAILS_ENV: test
+        run: |
+          bundle exec rake test
+
+      - name: Deploy to Heroku
+        if: ${{github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "cheelab"
+          heroku_email: "osayijodia@gmail.com"
