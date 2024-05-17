@@ -2,30 +2,31 @@
 # https://www.npmjs.com/package/@renderinc/heroku-import
 # Schema documented at https://render.com/docs/yaml-spec
 services:
-  - type: web # valid values: https://render.com/docs/yaml-spec#type
-    name: cheelab
-    env: docker # valid values: https://render.com/docs/yaml-spec#environment
-    dockerfilePath: Dockerfile.render
-    plan: free # optional; defaults to starter
-    numInstances: 1
-    domains: # custom domains
-      - 'www.cheelab.ca'
-    envVars:
-      - key: LANG # Imported from Heroku app
-        value: en_US.UTF-8
-      - key: RACK_ENV # Imported from Heroku app
-        value: production
-      - key: RAILS_ENV # Imported from Heroku app
-        value: production
-      - key: RAILS_LOG_TO_STDOUT # Imported from Heroku app
-        value: enabled
-      - key: RAILS_SERVE_STATIC_FILES # Imported from Heroku app
-        value: enabled
-      - key: DATABASE_URL # Render PostgreSQL database
-        fromDatabase:
-          name: postgresql-trapezoidal-93128
-          property: connectionString
+- type: web # valid values: https://render.com/docs/yaml-spec#type
+  runtime: docker
+  name: cheelab
+  #runtime: docker # valid values: https://render.com/docs/yaml-spec#environment
+  dockerfilePath: Dockerfile.render
+  plan: free # optional; defaults to starter
+  numInstances: 1
+  domains: # custom domains
+  - 'www.cheelab.ca'
+  envVars:
+  - key: LANG # Imported from Heroku app
+    value: en_US.UTF-8
+  - key: RACK_ENV # Imported from Heroku app
+    value: production
+  - key: RAILS_ENV # Imported from Heroku app
+    value: production
+  - key: RAILS_LOG_TO_STDOUT # Imported from Heroku app
+    value: enabled
+  - key: RAILS_SERVE_STATIC_FILES # Imported from Heroku app
+    value: enabled
+  - key: DATABASE_URL # Render PostgreSQL database
+    fromDatabase:
+      name: postgresql-trapezoidal-93128
+      property: connectionString
 
 databases: # Render PostgreSQL database
-  - name: postgresql-trapezoidal-93128
-    ipAllowList: [] # only allow internal connections
+- name: postgresql-trapezoidal-93128
+  ipAllowList: [] # only allow internal connections
