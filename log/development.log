@@ -4492,3 +4492,78 @@ getter and setter.
 
 Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
  (called from <main> at C:/Users/Bradley Gray-Hall/Desktop/Git/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at C:/Users/Bradley Gray-Hall/Desktop/Git/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/brainfreeze/" for ::1 at 2024-05-30 15:55:44 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 5446.5ms | Allocations: 112788)
+  Rendered layouts/_fonts.html.erb (Duration: 6.4ms | Allocations: 94)
+  Rendered layouts/_google_analytics.html.erb (Duration: 17.3ms | Allocations: 116)
+  Rendered layouts/_navbar.html.erb (Duration: 25.5ms | Allocations: 1225)
+  Rendered layouts/_footer.html.erb (Duration: 18.4ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 5572.7ms | Allocations: 119316)
+Completed 200 OK in 5751ms (Views: 5642.1ms | ActiveRecord: 0.0ms | Allocations: 122112)
+
+
+Started GET "/contact" for ::1 at 2024-05-30 15:55:54 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 22.6ms | Allocations: 1613)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 918)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 43.3ms | Allocations: 6802)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms | Allocations: 7137)
+
+
+Started GET "/contact" for ::1 at 2024-05-30 15:58:28 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 29.3ms | Allocations: 1650)
+  Rendered layouts/_fonts.html.erb (Duration: 0.7ms | Allocations: 89)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.7ms | Allocations: 1097)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 64.4ms | Allocations: 7883)
+Completed 200 OK in 77ms (Views: 74.6ms | ActiveRecord: 0.0ms | Allocations: 8609)
+
+
+Started GET "/contact" for ::1 at 2024-05-30 15:59:32 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 27.6ms | Allocations: 1648)
+  Rendered layouts/_fonts.html.erb (Duration: 0.7ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.0ms | Allocations: 1096)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 63.6ms | Allocations: 7877)
+Completed 200 OK in 76ms (Views: 73.5ms | ActiveRecord: 0.0ms | Allocations: 8604)
+
+
+Started GET "/contact" for ::1 at 2024-05-30 16:02:07 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 32.4ms | Allocations: 1644)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 91)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.9ms | Allocations: 1097)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 149)
+  Rendered layout layouts/application.html.erb (Duration: 70.6ms | Allocations: 7865)
+Completed 200 OK in 83ms (Views: 81.2ms | Allocations: 8597)
+
+
