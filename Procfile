@@ -1,2 +1,2 @@
-web: rails s
+web: bundle exec rails s
 release rails db:migrate
