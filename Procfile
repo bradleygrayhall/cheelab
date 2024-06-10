@@ -1,2 +1,2 @@
-web: rails s
+web: rails 
 release rails db:migrate
