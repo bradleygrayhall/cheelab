@@ -4583,3 +4583,2675 @@ getter and setter.
 
 Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
  (called from <main> at C:/Users/Bradley Gray-Hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at C:/Users/Bradley Gray-Hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for ::1 at 2024-06-18 19:19:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4191.7ms | Allocations: 201670)
+  Rendered layouts/_fonts.html.erb (Duration: 7.7ms | Allocations: 94)
+  Rendered layouts/_google_analytics.html.erb (Duration: 15.5ms | Allocations: 116)
+  Rendered layouts/_navbar.html.erb (Duration: 40.2ms | Allocations: 1229)
+  Rendered layouts/_footer.html.erb (Duration: 26.1ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 4350.0ms | Allocations: 208216)
+Completed 200 OK in 4589ms (Views: 4402.2ms | ActiveRecord: 0.0ms | Allocations: 214142)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 19:20:02 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1649)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 4.0ms | Allocations: 914)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 6791)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.0ms | Allocations: 7066)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 19:27:19 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 36.3ms | Allocations: 1719)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.2ms | Allocations: 1092)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 67.4ms | Allocations: 7921)
+Completed 200 OK in 77ms (Views: 76.5ms | Allocations: 8536)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/BF-2024%20collage.png"):
+  
+Started GET "/brainfreeze" for ::1 at 2024-06-18 19:29:54 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1297)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 916)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 80.6ms | Allocations: 21491)
+Completed 200 OK in 83ms (Views: 82.1ms | Allocations: 21763)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 19:38:30 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 42.2ms | Allocations: 1721)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.9ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 74.7ms | Allocations: 7899)
+Completed 200 OK in 84ms (Views: 83.3ms | Allocations: 8514)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 19:41:58 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 46.9ms | Allocations: 1719)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.8ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 78.7ms | Allocations: 7915)
+Completed 200 OK in 88ms (Views: 87.8ms | Allocations: 8528)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 20:13:02 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 25.8ms | Allocations: 1727)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 1094)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 41.2ms | Allocations: 7914)
+Completed 200 OK in 46ms (Views: 45.8ms | Allocations: 8530)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 20:14:24 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 24.0ms | Allocations: 1728)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 7924)
+Completed 200 OK in 46ms (Views: 46.1ms | Allocations: 8537)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 20:15:07 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 24.6ms | Allocations: 1730)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1094)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 7927)
+Completed 200 OK in 47ms (Views: 46.3ms | Allocations: 8540)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 20:15:23 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 22.9ms | Allocations: 1728)
+  Rendered layouts/_fonts.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 1094)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 7931)
+Completed 200 OK in 43ms (Views: 42.7ms | Allocations: 8544)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 20:15:32 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 26.8ms | Allocations: 1727)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 1094)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 7917)
+Completed 200 OK in 53ms (Views: 52.7ms | Allocations: 8530)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 20:15:44 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 29.9ms | Allocations: 1730)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1094)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 48.6ms | Allocations: 7942)
+Completed 200 OK in 53ms (Views: 53.0ms | Allocations: 8555)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 20:15:58 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 24.0ms | Allocations: 1728)
+  Rendered layouts/_fonts.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 1094)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 40.4ms | Allocations: 7907)
+Completed 200 OK in 45ms (Views: 44.6ms | Allocations: 8520)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 20:16:10 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 25.9ms | Allocations: 1730)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 1094)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 7912)
+Completed 200 OK in 49ms (Views: 48.9ms | Allocations: 8525)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 20:16:22 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 27.0ms | Allocations: 1729)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1094)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 48.2ms | Allocations: 7920)
+Completed 200 OK in 55ms (Views: 54.3ms | Allocations: 8533)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 20:16:32 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 26.8ms | Allocations: 1729)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 1094)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 7918)
+Completed 200 OK in 53ms (Views: 52.4ms | Allocations: 8531)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 20:16:41 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 25.0ms | Allocations: 1725)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 91)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1095)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 7935)
+Completed 200 OK in 50ms (Views: 49.3ms | Allocations: 8548)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 20:18:15 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 25.0ms | Allocations: 1725)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.5ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 42.3ms | Allocations: 7908)
+Completed 200 OK in 47ms (Views: 46.5ms | Allocations: 8521)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-18 20:20:14 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 24.9ms | Allocations: 1725)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 7897)
+Completed 200 OK in 46ms (Views: 45.5ms | Allocations: 8510)
+
+
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at C:/Users/Bradley Gray-Hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for 127.0.0.1 at 2024-06-19 02:09:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1552.2ms | Allocations: 109668)
+  Rendered layouts/_fonts.html.erb (Duration: 0.7ms | Allocations: 94)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.9ms | Allocations: 116)
+  Rendered layouts/_navbar.html.erb (Duration: 8.1ms | Allocations: 1227)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 1600.1ms | Allocations: 116201)
+Completed 200 OK in 1656ms (Views: 1618.3ms | ActiveRecord: 0.0ms | Allocations: 119791)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-06-19 02:09:35 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 41.3ms | Allocations: 1672)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.1ms | Allocations: 913)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 63.1ms | Allocations: 6819)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.0ms | Allocations: 7094)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-06-19 02:10:09 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 40.9ms | Allocations: 1731)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 72.3ms | Allocations: 7977)
+Completed 200 OK in 79ms (Views: 79.0ms | ActiveRecord: 0.0ms | Allocations: 8590)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-06-19 02:10:23 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 38.8ms | Allocations: 1729)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.1ms | Allocations: 1098)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 68.0ms | Allocations: 7980)
+Completed 200 OK in 77ms (Views: 77.0ms | ActiveRecord: 0.0ms | Allocations: 8597)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-06-19 02:10:42 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 42.6ms | Allocations: 1735)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | Allocations: 1098)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 71.2ms | Allocations: 7973)
+Completed 200 OK in 80ms (Views: 79.7ms | ActiveRecord: 0.0ms | Allocations: 8590)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-06-19 02:11:18 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 50.8ms | Allocations: 1753)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.8ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 1098)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 80.5ms | Allocations: 8018)
+Completed 200 OK in 89ms (Views: 88.9ms | ActiveRecord: 0.0ms | Allocations: 8632)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-06-19 02:12:31 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 49.5ms | Allocations: 1756)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 1098)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 79.5ms | Allocations: 8008)
+Completed 200 OK in 88ms (Views: 87.9ms | ActiveRecord: 0.0ms | Allocations: 8622)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-06-19 02:12:59 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 45.3ms | Allocations: 1758)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 87)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 1098)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 75.5ms | Allocations: 8031)
+Completed 200 OK in 84ms (Views: 83.1ms | ActiveRecord: 0.0ms | Allocations: 8645)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-06-19 02:13:14 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 43.2ms | Allocations: 1750)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.8ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 76.4ms | Allocations: 8001)
+Completed 200 OK in 85ms (Views: 84.5ms | ActiveRecord: 0.0ms | Allocations: 8615)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-06-19 02:13:52 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 43.7ms | Allocations: 1755)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 74.1ms | Allocations: 8000)
+Completed 200 OK in 81ms (Views: 81.1ms | ActiveRecord: 0.0ms | Allocations: 8614)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-06-19 02:15:04 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 45.8ms | Allocations: 1753)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.4ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 78.1ms | Allocations: 7998)
+Completed 200 OK in 86ms (Views: 86.0ms | Allocations: 8612)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-06-19 02:15:26 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 47.0ms | Allocations: 1752)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.6ms | Allocations: 1098)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 76.6ms | Allocations: 8008)
+Completed 200 OK in 85ms (Views: 84.3ms | Allocations: 8625)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-06-19 02:15:53 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 50.2ms | Allocations: 1752)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.2ms | Allocations: 1098)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 81.4ms | Allocations: 8010)
+Completed 200 OK in 90ms (Views: 89.3ms | Allocations: 8624)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-06-19 02:31:31 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 46.0ms | Allocations: 1748)
+  Rendered layouts/_fonts.html.erb (Duration: 0.7ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.8ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.6ms | Allocations: 1098)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 78.5ms | Allocations: 7997)
+Completed 200 OK in 86ms (Views: 85.8ms | Allocations: 8611)
+
+
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at C:/Users/Bradley Gray-Hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for ::1 at 2024-06-19 14:40:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 516.0ms | Allocations: 54251)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 94)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.7ms | Allocations: 116)
+  Rendered layouts/_navbar.html.erb (Duration: 10.0ms | Allocations: 1245)
+  Rendered layouts/_footer.html.erb (Duration: 1.4ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 573.9ms | Allocations: 61014)
+Completed 200 OK in 631ms (Views: 592.0ms | ActiveRecord: 0.0ms | Allocations: 64606)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-19 14:40:48 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1717)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.8ms | Allocations: 916)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 6835)
+Completed 200 OK in 35ms (Views: 35.1ms | ActiveRecord: 0.0ms | Allocations: 7108)
+
+
+Started GET "/publications" for ::1 at 2024-06-19 14:41:10 -0400
+Processing by PublicationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering publications/index.html.erb within layouts/application
+  [1m[36mPublication Load (0.4ms)[0m  [1m[34mSELECT "publications".* FROM "publications" ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 11], ["OFFSET", 0]]
+  ↳ app/views/publications/index.html.erb:15
+  Rendered publications/index.html.erb within layouts/application (Duration: 45.3ms | Allocations: 3531)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 4.3ms | Allocations: 883)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 63.6ms | Allocations: 8469)
+Completed 200 OK in 87ms (Views: 70.9ms | ActiveRecord: 0.4ms | Allocations: 9823)
+
+
+Started GET "/research" for ::1 at 2024-06-19 14:41:17 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 19.8ms | Allocations: 1690)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 921)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 6857)
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 0.0ms | Allocations: 7189)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-19 14:41:24 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1304)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.1ms | Allocations: 920)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 6450)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 6724)
+
+
+Started GET "/research" for ::1 at 2024-06-19 14:42:59 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1728)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 1.0ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.5ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 7989)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.0ms | Allocations: 8716)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-19 14:43:10 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 41.4ms | Allocations: 1698)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 920)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 6819)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.0ms | Allocations: 7091)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-19 14:43:22 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 49.7ms | Allocations: 1747)
+  Rendered layouts/_fonts.html.erb (Duration: 0.9ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 75.1ms | Allocations: 8000)
+Completed 200 OK in 81ms (Views: 81.0ms | ActiveRecord: 0.0ms | Allocations: 8616)
+
+
+Started GET "/research" for ::1 at 2024-06-19 14:43:38 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1675)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 7.2ms | Allocations: 921)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 6809)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.0ms | Allocations: 7136)
+
+
+Started GET "/publications" for ::1 at 2024-06-19 14:43:40 -0400
+Processing by PublicationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering publications/index.html.erb within layouts/application
+  [1m[36mPublication Load (0.5ms)[0m  [1m[34mSELECT "publications".* FROM "publications" ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 11], ["OFFSET", 0]]
+  ↳ app/views/publications/index.html.erb:15
+  Rendered publications/index.html.erb within layouts/application (Duration: 28.8ms | Allocations: 2811)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 895)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 71.5ms | Allocations: 7850)
+Completed 200 OK in 80ms (Views: 76.4ms | ActiveRecord: 0.5ms | Allocations: 8578)
+
+
+Started GET "/personnel" for ::1 at 2024-06-19 14:43:43 -0400
+Processing by PersonnelsController#index as HTML
+  [1m[36mPersonnel Load (0.3ms)[0m  [1m[34mSELECT "personnels".* FROM "personnels"[0m
+  ↳ app/controllers/personnels_controller.rb:10:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering personnels/index.html.erb within layouts/application
+  Rendered personnels/index.html.erb within layouts/application (Duration: 188.2ms | Allocations: 2695)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 4.8ms | Allocations: 933)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 217.6ms | Allocations: 7876)
+Completed 200 OK in 281ms (Views: 222.7ms | ActiveRecord: 0.3ms | Allocations: 12107)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-19 14:43:45 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 18.6ms | Allocations: 1334)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 6.8ms | Allocations: 925)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 6489)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms | Allocations: 6766)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-19 14:47:26 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 50.6ms | Allocations: 1750)
+  Rendered layouts/_fonts.html.erb (Duration: 0.7ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.8ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.3ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 84.9ms | Allocations: 7997)
+Completed 200 OK in 95ms (Views: 94.3ms | ActiveRecord: 0.0ms | Allocations: 8610)
+
+
+Started GET "/research" for ::1 at 2024-06-19 14:49:55 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 40.7ms | Allocations: 1728)
+  Rendered layouts/_fonts.html.erb (Duration: 1.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.9ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.9ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 67.6ms | Allocations: 7959)
+Completed 200 OK in 76ms (Views: 74.1ms | Allocations: 8687)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-19 14:52:08 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 49.0ms | Allocations: 1751)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 75.9ms | Allocations: 7996)
+Completed 200 OK in 86ms (Views: 85.5ms | Allocations: 8610)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-19 14:52:43 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 52.3ms | Allocations: 1748)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 1092)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 74.2ms | Allocations: 7978)
+Completed 200 OK in 80ms (Views: 79.8ms | Allocations: 8592)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-19 14:55:40 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 45.7ms | Allocations: 1751)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.6ms | Allocations: 1092)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 68.7ms | Allocations: 7996)
+Completed 200 OK in 79ms (Views: 78.7ms | Allocations: 8610)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-19 14:57:23 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 49.7ms | Allocations: 1749)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 5.9ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 81.5ms | Allocations: 7998)
+Completed 200 OK in 91ms (Views: 90.9ms | Allocations: 8612)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-19 14:59:09 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 52.6ms | Allocations: 1754)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 78.3ms | Allocations: 7988)
+Completed 200 OK in 88ms (Views: 87.4ms | Allocations: 8602)
+
+
+Started GET "/contact" for ::1 at 2024-06-19 15:04:09 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 32.9ms | Allocations: 1676)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 60.5ms | Allocations: 7904)
+Completed 200 OK in 69ms (Views: 67.4ms | Allocations: 8633)
+
+
+Started GET "/contact" for ::1 at 2024-06-19 15:05:26 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 34.7ms | Allocations: 1650)
+  Rendered layouts/_fonts.html.erb (Duration: 1.8ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 7.3ms | Allocations: 1092)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 81.7ms | Allocations: 7839)
+Completed 200 OK in 95ms (Views: 92.1ms | Allocations: 8566)
+
+
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at C:/Users/Bradley Gray-Hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for ::1 at 2024-06-21 21:22:38 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1854.9ms | Allocations: 54787)
+  Rendered layouts/_fonts.html.erb (Duration: 7.1ms | Allocations: 97)
+  Rendered layouts/_google_analytics.html.erb (Duration: 16.0ms | Allocations: 116)
+  Rendered layouts/_navbar.html.erb (Duration: 36.9ms | Allocations: 1247)
+  Rendered layouts/_footer.html.erb (Duration: 15.1ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 2016.7ms | Allocations: 61575)
+Completed 200 OK in 2178ms (Views: 2058.7ms | ActiveRecord: 0.0ms | Allocations: 65168)
+
+
+Started GET "/contact" for ::1 at 2024-06-21 21:22:44 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 36.3ms | Allocations: 1625)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 913)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 48.5ms | Allocations: 6729)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.0ms | Allocations: 7061)
+
+
+Started GET "/contact" for ::1 at 2024-06-21 21:24:50 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 20.6ms | Allocations: 1664)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 7903)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.0ms | Allocations: 8630)
+
+
+Started GET "/contact" for ::1 at 2024-06-21 21:25:41 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 17.4ms | Allocations: 1663)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 87)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 7926)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms | Allocations: 8654)
+
+
+Started GET "/contact" for ::1 at 2024-06-21 21:25:52 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 19.2ms | Allocations: 1655)
+  Rendered layouts/_fonts.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.8ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 7854)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.0ms | Allocations: 8582)
+
+
+Started GET "/contact" for ::1 at 2024-06-21 21:26:08 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1649)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 91)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 7861)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms | Allocations: 8588)
+
+
+Started GET "/contact" for ::1 at 2024-06-21 21:26:33 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 22.5ms | Allocations: 1658)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.1ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | Allocations: 7898)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.0ms | Allocations: 8626)
+
+
+Started GET "/contact" for ::1 at 2024-06-21 21:28:09 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 17.3ms | Allocations: 1650)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 7833)
+Completed 200 OK in 40ms (Views: 39.1ms | Allocations: 8560)
+
+
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at C:/Users/Bradley Gray-Hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for ::1 at 2024-06-25 02:35:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2440.2ms | Allocations: 54770)
+  Rendered layouts/_fonts.html.erb (Duration: 9.4ms | Allocations: 94)
+  Rendered layouts/_google_analytics.html.erb (Duration: 20.3ms | Allocations: 116)
+  Rendered layouts/_navbar.html.erb (Duration: 58.6ms | Allocations: 1245)
+  Rendered layouts/_footer.html.erb (Duration: 22.9ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 2634.6ms | Allocations: 61497)
+Completed 200 OK in 2860ms (Views: 2694.6ms | ActiveRecord: 0.0ms | Allocations: 65088)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 02:35:19 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 54.9ms | Allocations: 1680)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.1ms | Allocations: 921)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 74.9ms | Allocations: 6827)
+Completed 200 OK in 76ms (Views: 75.9ms | ActiveRecord: 0.0ms | Allocations: 7103)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 02:35:55 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 29.9ms | Allocations: 1705)
+  Rendered layouts/_fonts.html.erb (Duration: 1.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.8ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 59.7ms | Allocations: 7964)
+Completed 200 OK in 68ms (Views: 68.0ms | ActiveRecord: 0.0ms | Allocations: 8577)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 02:37:43 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 38.6ms | Allocations: 1714)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 87)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.6ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 73.6ms | Allocations: 7967)
+Completed 200 OK in 82ms (Views: 81.5ms | ActiveRecord: 0.0ms | Allocations: 8584)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 02:38:43 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 37.0ms | Allocations: 1703)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 149)
+  Rendered layout layouts/application.html.erb (Duration: 67.6ms | Allocations: 7956)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.0ms | Allocations: 8570)
+
+
+Started GET "/brainfreeze/2023" for ::1 at 2024-06-25 02:46:00 -0400
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 28.6ms | Allocations: 1552)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.9ms | Allocations: 922)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 52.8ms | Allocations: 6672)
+Completed 200 OK in 55ms (Views: 54.2ms | Allocations: 6947)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 02:47:15 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 34.6ms | Allocations: 1711)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 67.4ms | Allocations: 7942)
+Completed 200 OK in 75ms (Views: 74.7ms | Allocations: 8555)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 02:49:47 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 37.3ms | Allocations: 1687)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.1ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 67.8ms | Allocations: 7932)
+Completed 200 OK in 75ms (Views: 75.0ms | Allocations: 8546)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 02:57:48 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 29.1ms | Allocations: 1692)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.2ms | Allocations: 1095)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 59.6ms | Allocations: 7934)
+Completed 200 OK in 67ms (Views: 66.9ms | Allocations: 8548)
+
+
+Started GET "/" for ::1 at 2024-06-25 17:14:57 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1578)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.1ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 7815)
+Completed 200 OK in 31ms (Views: 29.4ms | Allocations: 8542)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:15:00 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 19.7ms | Allocations: 1639)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 921)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 6773)
+Completed 200 OK in 32ms (Views: 31.7ms | Allocations: 7045)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:28:59 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 31.6ms | Allocations: 1776)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 6.6ms | Allocations: 949)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 6965)
+Completed 200 OK in 65ms (Views: 54.2ms | Allocations: 7644)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/brainfreeze2024.png"):
+  
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:29:24 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 29.1ms | Allocations: 1747)
+  Rendered layouts/_fonts.html.erb (Duration: 5.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 11.7ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 18.5ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 15.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 119.6ms | Allocations: 7998)
+Completed 200 OK in 125ms (Views: 124.3ms | Allocations: 8612)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:29:58 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 30.9ms | Allocations: 1766)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 8027)
+Completed 200 OK in 54ms (Views: 53.7ms | Allocations: 8641)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/brainfreeze2024.png"):
+  
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:30:19 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 26.8ms | Allocations: 1748)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 44.7ms | Allocations: 7968)
+Completed 200 OK in 50ms (Views: 49.6ms | Allocations: 8582)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:31:01 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 27.6ms | Allocations: 1754)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 44.9ms | Allocations: 8010)
+Completed 200 OK in 51ms (Views: 50.7ms | Allocations: 8624)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:31:11 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 31.0ms | Allocations: 1750)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 8008)
+Completed 200 OK in 53ms (Views: 52.5ms | Allocations: 8622)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:31:46 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 28.2ms | Allocations: 1751)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 44.3ms | Allocations: 7991)
+Completed 200 OK in 49ms (Views: 49.1ms | Allocations: 8605)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/brainfreeze2024.png"):
+  
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:32:02 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 30.7ms | Allocations: 1747)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 8009)
+Completed 200 OK in 53ms (Views: 52.2ms | Allocations: 8623)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/brainfreeze2024.png"):
+  
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:32:12 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 29.6ms | Allocations: 1749)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 89)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 52.0ms | Allocations: 8014)
+Completed 200 OK in 57ms (Views: 56.5ms | Allocations: 8628)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/brainfreeze2024.png"):
+  
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:32:56 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 32.2ms | Allocations: 1763)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1099)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 48.9ms | Allocations: 8003)
+Completed 200 OK in 54ms (Views: 53.7ms | Allocations: 8617)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/brainfreeze2024.png"):
+  
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:33:11 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 30.3ms | Allocations: 1760)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 8004)
+Completed 200 OK in 56ms (Views: 55.4ms | Allocations: 8618)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/brainfreeze2024.png"):
+  
+Started GET "/brainfreeze/2024" for ::1 at 2024-06-25 17:33:19 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 16.6ms | Allocations: 1634)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 919)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 6775)
+Completed 200 OK in 32ms (Views: 32.0ms | Allocations: 7047)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:34:00 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 29.2ms | Allocations: 1759)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.7ms | Allocations: 1091)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 47.4ms | Allocations: 7955)
+Completed 200 OK in 52ms (Views: 51.9ms | Allocations: 8567)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/brainfreeze2024.png"):
+  
+Started GET "/brainfreeze/2024" for ::1 at 2024-06-25 17:34:35 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1638)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 922)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 6800)
+Completed 200 OK in 17ms (Views: 16.4ms | Allocations: 7072)
+
+
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at C:/Users/Bradley Gray-Hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/brainfreeze/2024" for ::1 at 2024-06-25 17:44:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 3814.3ms | Allocations: 129852)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 94)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 116)
+  Rendered layouts/_navbar.html.erb (Duration: 3.9ms | Allocations: 1229)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 3837.7ms | Allocations: 136567)
+Completed 200 OK in 3932ms (Views: 3879.4ms | ActiveRecord: 0.0ms | Allocations: 139364)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:44:24 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1744)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.9ms | Allocations: 958)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 40.3ms | Allocations: 6976)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms | Allocations: 7252)
+
+
+Started GET "/brainfreeze/2024" for ::1 at 2024-06-25 17:44:30 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1306)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 6456)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 6730)
+
+
+Started GET "/" for ::1 at 2024-06-25 17:45:33 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1530)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 6657)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms | Allocations: 6990)
+
+
+Started GET "/research" for ::1 at 2024-06-25 17:45:36 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1680)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 6807)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 7139)
+
+
+Started GET "/personnel" for ::1 at 2024-06-25 17:45:42 -0400
+Processing by PersonnelsController#index as HTML
+  [1m[36mPersonnel Load (0.4ms)[0m  [1m[34mSELECT "personnels".* FROM "personnels"[0m
+  ↳ app/controllers/personnels_controller.rb:10:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering personnels/index.html.erb within layouts/application
+  Rendered personnels/index.html.erb within layouts/application (Duration: 90.1ms | Allocations: 2683)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 927)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 104.2ms | Allocations: 7871)
+Completed 200 OK in 158ms (Views: 108.3ms | ActiveRecord: 0.4ms | Allocations: 11782)
+
+
+Started GET "/publications" for ::1 at 2024-06-25 17:45:45 -0400
+Processing by PublicationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering publications/index.html.erb within layouts/application
+  [1m[36mPublication Load (1.0ms)[0m  [1m[34mSELECT "publications".* FROM "publications" ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 11], ["OFFSET", 0]]
+  ↳ app/views/publications/index.html.erb:15
+  Rendered publications/index.html.erb within layouts/application (Duration: 28.1ms | Allocations: 3532)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 884)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 8469)
+Completed 200 OK in 59ms (Views: 44.9ms | ActiveRecord: 1.0ms | Allocations: 9697)
+
+
+Started GET "/blog" for ::1 at 2024-06-25 17:45:47 -0400
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE (EXTRACT(year from sort_date) = 2024) ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:40:in `each_with_index'
+  Rendered posts/index.html.erb within layouts/application (Duration: 66.3ms | Allocations: 5701)
+  Rendered layout layouts/application.html.erb (Duration: 66.8ms | Allocations: 5783)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 0.4ms | Allocations: 9174)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "from": syntax error):
+    37: 
+    38:   <%= link_to 'Add a New Blog Post', new_post_path, class: "mb-5 ml-5 btn btn-large btn-primary" if user_signed_in? %>
+    39:   <% if (@posts) %>
+    40:     <% @posts.each_with_index do |post, i| %>
+    41: 
+    42:       <% if (post.images.count > 1) %>
+    43:         <div class="container-fluid px-1 px-md-5 blog-post">
+  
+app/views/posts/index.html.erb:40:in `each_with_index'
+app/views/posts/index.html.erb:40
+app/controllers/posts_controller.rb:11:in `index'
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:45:55 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1309)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 922)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 6445)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 6717)
+
+
+Started GET "/" for ::1 at 2024-06-25 17:45:57 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1304)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.7ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 6430)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 6699)
+
+
+Started GET "/personnel" for ::1 at 2024-06-25 17:45:58 -0400
+Processing by PersonnelsController#index as HTML
+  [1m[36mPersonnel Load (0.4ms)[0m  [1m[34mSELECT "personnels".* FROM "personnels"[0m
+  ↳ app/controllers/personnels_controller.rb:10:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering personnels/index.html.erb within layouts/application
+  Rendered personnels/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1310)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 922)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 6446)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.4ms | Allocations: 7242)
+
+
+Started GET "/personnel" for ::1 at 2024-06-25 17:46:00 -0400
+Processing by PersonnelsController#index as HTML
+  [1m[36mPersonnel Load (0.2ms)[0m  [1m[34mSELECT "personnels".* FROM "personnels"[0m
+  ↳ app/controllers/personnels_controller.rb:10:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering personnels/index.html.erb within layouts/application
+  Rendered personnels/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1306)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 6420)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.2ms | Allocations: 7212)
+
+
+Started GET "/research" for ::1 at 2024-06-25 17:46:02 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1299)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 6415)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 6684)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:46:56 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1308)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 6439)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 6709)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:49:01 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 24.4ms | Allocations: 1724)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 1101)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 7952)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms | Allocations: 8564)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:49:14 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 30.0ms | Allocations: 1717)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 7957)
+Completed 200 OK in 56ms (Views: 56.0ms | ActiveRecord: 0.0ms | Allocations: 8570)
+
+
+Started GET "/brainfreeze/2023" for ::1 at 2024-06-25 17:49:30 -0400
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 17.0ms | Allocations: 1565)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 922)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 6702)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 6973)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:52:27 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 18.9ms | Allocations: 1651)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 89)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1101)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 40.1ms | Allocations: 7868)
+Completed 200 OK in 45ms (Views: 45.2ms | Allocations: 8480)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:52:38 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 18.1ms | Allocations: 1650)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.9ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 37.4ms | Allocations: 7888)
+Completed 200 OK in 42ms (Views: 41.9ms | Allocations: 8501)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:52:54 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 18.5ms | Allocations: 1650)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 7869)
+Completed 200 OK in 39ms (Views: 39.0ms | Allocations: 8482)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:53:33 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 17.5ms | Allocations: 1619)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 35.8ms | Allocations: 7860)
+Completed 200 OK in 41ms (Views: 40.4ms | Allocations: 8473)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:53:53 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 20.8ms | Allocations: 1610)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 7860)
+Completed 200 OK in 47ms (Views: 47.2ms | Allocations: 8473)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:54:21 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 23.1ms | Allocations: 1657)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 7894)
+Completed 200 OK in 47ms (Views: 46.8ms | Allocations: 8507)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:55:53 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 20.9ms | Allocations: 1659)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1101)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 7899)
+Completed 200 OK in 56ms (Views: 55.7ms | Allocations: 8512)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:56:06 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 23.8ms | Allocations: 1658)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 40.4ms | Allocations: 7918)
+Completed 200 OK in 46ms (Views: 45.3ms | Allocations: 8531)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 17:57:02 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 19.8ms | Allocations: 1660)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 7914)
+Completed 200 OK in 45ms (Views: 44.2ms | Allocations: 8527)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 19:05:34 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1307)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 922)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 6428)
+Completed 200 OK in 28ms (Views: 26.6ms | Allocations: 6699)
+
+
+Started GET "/brainfreeze/2024" for ::1 at 2024-06-25 19:05:39 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1644)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 922)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 6780)
+Completed 200 OK in 18ms (Views: 18.2ms | Allocations: 7050)
+
+
+Started GET "/research" for ::1 at 2024-06-25 19:05:47 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1674)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 6812)
+Completed 200 OK in 20ms (Views: 18.3ms | Allocations: 7137)
+
+
+Started GET "/research" for ::1 at 2024-06-25 19:28:27 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1305)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 922)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 6447)
+Completed 200 OK in 17ms (Views: 17.0ms | Allocations: 6716)
+
+
+Started GET "/publications" for ::1 at 2024-06-25 19:30:26 -0400
+Processing by PublicationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering publications/index.html.erb within layouts/application
+  [1m[36mPublication Load (0.2ms)[0m  [1m[34mSELECT "publications".* FROM "publications" ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 11], ["OFFSET", 0]]
+  ↳ app/views/publications/index.html.erb:15
+  Rendered publications/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2760)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 884)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 7685)
+Completed 200 OK in 37ms (Views: 27.7ms | ActiveRecord: 1.1ms | Allocations: 8518)
+
+
+Started GET "/blog" for ::1 at 2024-06-25 19:30:28 -0400
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE (EXTRACT(year from sort_date) = 2024) ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:40:in `each_with_index'
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 5231)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5313)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.8ms | Allocations: 5986)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "from": syntax error):
+    37: 
+    38:   <%= link_to 'Add a New Blog Post', new_post_path, class: "mb-5 ml-5 btn btn-large btn-primary" if user_signed_in? %>
+    39:   <% if (@posts) %>
+    40:     <% @posts.each_with_index do |post, i| %>
+    41: 
+    42:       <% if (post.images.count > 1) %>
+    43:         <div class="container-fluid px-1 px-md-5 blog-post">
+  
+app/views/posts/index.html.erb:40:in `each_with_index'
+app/views/posts/index.html.erb:40
+app/controllers/posts_controller.rb:11:in `index'
+Started GET "/brainfreeze" for ::1 at 2024-06-25 19:30:32 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1309)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 922)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 6442)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 6713)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-06-25 19:51:55 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1657)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.8ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 7903)
+Completed 200 OK in 31ms (Views: 30.2ms | Allocations: 8515)
+
+
+Started GET "/research" for ::1 at 2024-06-25 19:51:57 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 33.1ms | Allocations: 1688)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 44.9ms | Allocations: 6823)
+Completed 200 OK in 47ms (Views: 45.7ms | Allocations: 7149)
+
+
+Started GET "/research" for ::1 at 2024-06-25 19:52:11 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 32.5ms | Allocations: 1740)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.8ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 8009)
+Completed 200 OK in 60ms (Views: 58.7ms | Allocations: 8735)
+
+
+Started GET "/research" for ::1 at 2024-06-25 19:52:32 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 34.5ms | Allocations: 1739)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 54.8ms | Allocations: 8002)
+Completed 200 OK in 61ms (Views: 59.6ms | Allocations: 8739)
+
+
+Started GET "/research" for ::1 at 2024-06-25 19:52:47 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 32.9ms | Allocations: 1740)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 7994)
+Completed 200 OK in 57ms (Views: 56.0ms | Allocations: 8721)
+
+
+Started GET "/research" for ::1 at 2024-06-25 19:53:27 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 34.5ms | Allocations: 1728)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 7959)
+Completed 200 OK in 58ms (Views: 57.1ms | Allocations: 8686)
+
+
+Started GET "/research" for ::1 at 2024-06-25 19:59:41 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 35.7ms | Allocations: 1728)
+  Rendered layouts/_fonts.html.erb (Duration: 5.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 12.1ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 21.4ms | Allocations: 1101)
+  Rendered layouts/_footer.html.erb (Duration: 15.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 130.5ms | Allocations: 7968)
+Completed 200 OK in 137ms (Views: 135.3ms | Allocations: 8695)
+
+
+Started GET "/research" for ::1 at 2024-06-25 20:00:22 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 36.7ms | Allocations: 1728)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 56.9ms | Allocations: 7988)
+Completed 200 OK in 65ms (Views: 63.0ms | Allocations: 8715)
+
+
+Started GET "/research" for ::1 at 2024-06-25 20:01:01 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 39.8ms | Allocations: 1726)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 89)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | Allocations: 1101)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 64.9ms | Allocations: 7978)
+Completed 200 OK in 73ms (Views: 70.4ms | Allocations: 8705)
+
+
+Started GET "/research" for ::1 at 2024-06-25 20:01:29 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 29.7ms | Allocations: 1717)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 2.3ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 7921)
+Completed 200 OK in 58ms (Views: 56.9ms | Allocations: 8648)
+
+
+Started GET "/research" for ::1 at 2024-06-25 20:02:41 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 31.9ms | Allocations: 1717)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 1094)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 49.2ms | Allocations: 7899)
+Completed 200 OK in 56ms (Views: 54.4ms | Allocations: 8626)
+
+
+Started GET "/research" for ::1 at 2024-06-25 20:05:43 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 30.5ms | Allocations: 1725)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 1094)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 7961)
+Completed 200 OK in 52ms (Views: 50.5ms | Allocations: 8688)
+
+
+Started GET "/research" for ::1 at 2024-06-25 20:06:30 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 30.2ms | Allocations: 1745)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 7998)
+Completed 200 OK in 53ms (Views: 52.0ms | Allocations: 8725)
+
+
+Started GET "/research" for ::1 at 2024-06-25 20:09:02 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 33.7ms | Allocations: 1744)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 52.0ms | Allocations: 7998)
+Completed 200 OK in 60ms (Views: 57.8ms | Allocations: 8725)
+
+
+Started GET "/research" for ::1 at 2024-06-25 20:09:15 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 29.3ms | Allocations: 1741)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 7985)
+Completed 200 OK in 52ms (Views: 50.8ms | Allocations: 8712)
+
+
+Started GET "/research" for ::1 at 2024-06-25 20:09:40 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 28.7ms | Allocations: 1745)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 7998)
+Completed 200 OK in 52ms (Views: 50.1ms | Allocations: 8725)
+
+
+Started GET "/research" for ::1 at 2024-06-25 20:09:53 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 31.8ms | Allocations: 1743)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.3ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 49.7ms | Allocations: 7978)
+Completed 200 OK in 56ms (Views: 54.8ms | Allocations: 8705)
+
+
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at C:/Users/Bradley Gray-Hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for ::1 at 2024-07-03 14:16:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5376.6ms | Allocations: 116767)
+  Rendered layouts/_fonts.html.erb (Duration: 7.7ms | Allocations: 94)
+  Rendered layouts/_google_analytics.html.erb (Duration: 14.6ms | Allocations: 116)
+  Rendered layouts/_navbar.html.erb (Duration: 25.9ms | Allocations: 1229)
+  Rendered layouts/_footer.html.erb (Duration: 16.3ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 5498.1ms | Allocations: 123484)
+Completed 200 OK in 5760ms (Views: 5572.4ms | ActiveRecord: 0.0ms | Allocations: 127076)
+
+
+Started GET "/contact" for ::1 at 2024-07-03 14:37:48 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 48.6ms | Allocations: 1603)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 12.3ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 87.4ms | Allocations: 6663)
+Completed 200 OK in 91ms (Views: 88.7ms | Allocations: 6995)
+
+
+Started GET "/contact" for ::1 at 2024-07-03 14:39:36 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 34.1ms | Allocations: 1663)
+  Rendered layouts/_fonts.html.erb (Duration: 10.0ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 18.8ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 26.6ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 22.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 173.5ms | Allocations: 7914)
+Completed 200 OK in 181ms (Views: 179.6ms | Allocations: 8641)
+
+
+Started GET "/contact" for ::1 at 2024-07-03 14:39:50 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (Duration: 27.8ms | Allocations: 1653)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 53.3ms | Allocations: 7855)
+Completed 200 OK in 63ms (Views: 61.3ms | Allocations: 8582)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:40:05 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 35.2ms | Allocations: 1602)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 56.1ms | Allocations: 6724)
+Completed 200 OK in 58ms (Views: 57.1ms | Allocations: 6996)
+
+
+Started GET "/brainfreeze/2024" for ::1 at 2024-07-03 14:40:26 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 40.5ms | Allocations: 1637)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 61.3ms | Allocations: 6760)
+Completed 200 OK in 63ms (Views: 62.3ms | Allocations: 7033)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:41:36 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 24.9ms | Allocations: 1659)
+  Rendered layouts/_fonts.html.erb (Duration: 0.8ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.8ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 7895)
+Completed 200 OK in 65ms (Views: 64.0ms | Allocations: 8511)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:41:51 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 27.5ms | Allocations: 1660)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 58.5ms | Allocations: 7921)
+Completed 200 OK in 67ms (Views: 66.4ms | Allocations: 8535)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:42:10 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 23.4ms | Allocations: 1659)
+  Rendered layouts/_fonts.html.erb (Duration: 0.8ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 1101)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 7927)
+Completed 200 OK in 60ms (Views: 59.9ms | Allocations: 8541)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:42:41 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 28.3ms | Allocations: 1659)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 7901)
+Completed 200 OK in 58ms (Views: 57.7ms | Allocations: 8515)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:43:15 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 32.7ms | Allocations: 1661)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 57.2ms | Allocations: 7916)
+Completed 200 OK in 65ms (Views: 64.7ms | Allocations: 8530)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:43:31 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 34.0ms | Allocations: 1662)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 4.0ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 58.1ms | Allocations: 7932)
+Completed 200 OK in 65ms (Views: 64.8ms | Allocations: 8546)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:43:48 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 25.1ms | Allocations: 1661)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 55.7ms | Allocations: 7918)
+Completed 200 OK in 66ms (Views: 65.4ms | Allocations: 8532)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:44:34 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 30.9ms | Allocations: 1660)
+  Rendered layouts/_fonts.html.erb (Duration: 0.7ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 7929)
+Completed 200 OK in 70ms (Views: 69.9ms | Allocations: 8546)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:44:49 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 26.1ms | Allocations: 1667)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 87)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 55.1ms | Allocations: 7926)
+Completed 200 OK in 64ms (Views: 63.5ms | Allocations: 8540)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:45:20 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 34.2ms | Allocations: 1665)
+  Rendered layouts/_fonts.html.erb (Duration: 1.7ms | Allocations: 87)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 1101)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 61.8ms | Allocations: 7953)
+Completed 200 OK in 71ms (Views: 70.7ms | Allocations: 8567)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:46:41 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 28.7ms | Allocations: 1669)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 1101)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 56.1ms | Allocations: 7938)
+Completed 200 OK in 65ms (Views: 64.7ms | Allocations: 8552)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:47:04 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 48.9ms | Allocations: 1654)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 91)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 1101)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 98.7ms | Allocations: 7921)
+Completed 200 OK in 108ms (Views: 107.9ms | Allocations: 8534)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:47:21 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 29.2ms | Allocations: 1654)
+  Rendered layouts/_fonts.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.7ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | Allocations: 1093)
+  Rendered layouts/_footer.html.erb (Duration: 2.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 54.8ms | Allocations: 7889)
+Completed 200 OK in 64ms (Views: 63.4ms | Allocations: 8502)
+
+
+Started GET "/brainfreeze/2024" for ::1 at 2024-07-03 14:48:28 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1641)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.5ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 6770)
+Completed 200 OK in 29ms (Views: 28.7ms | Allocations: 7042)
+
+
+Started GET "/brainfreeze/2024" for ::1 at 2024-07-03 14:48:50 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 30.0ms | Allocations: 1692)
+  Rendered layouts/_fonts.html.erb (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.6ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 3.5ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 7952)
+Completed 200 OK in 62ms (Views: 62.0ms | Allocations: 8565)
+
+
+Started GET "/brainfreeze/2024" for ::1 at 2024-07-03 14:49:53 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 24.9ms | Allocations: 1696)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 87)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.4ms | Allocations: 114)
+  Rendered layouts/_navbar.html.erb (Duration: 2.8ms | Allocations: 1100)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 49.6ms | Allocations: 7960)
+Completed 200 OK in 56ms (Views: 55.9ms | Allocations: 8574)
+
+
+Started GET "/personnel" for ::1 at 2024-07-03 14:51:02 -0400
+Processing by PersonnelsController#index as HTML
+  [1m[36mPersonnel Load (0.5ms)[0m  [1m[34mSELECT "personnels".* FROM "personnels"[0m
+  ↳ app/controllers/personnels_controller.rb:10:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering personnels/index.html.erb within layouts/application
+  Rendered personnels/index.html.erb within layouts/application (Duration: 133.2ms | Allocations: 2677)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 3.9ms | Allocations: 935)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 157.2ms | Allocations: 7870)
+Completed 200 OK in 248ms (Views: 165.1ms | ActiveRecord: 1.4ms | Allocations: 11898)
+
+
+Started GET "/research" for ::1 at 2024-07-03 14:51:11 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 66.7ms | Allocations: 1696)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 922)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 82.0ms | Allocations: 6827)
+Completed 200 OK in 85ms (Views: 83.2ms | ActiveRecord: 0.0ms | Allocations: 7156)
+
+
+Started GET "/publications" for ::1 at 2024-07-03 14:51:13 -0400
+Processing by PublicationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering publications/index.html.erb within layouts/application
+  [1m[36mPublication Load (1.5ms)[0m  [1m[34mSELECT "publications".* FROM "publications" ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 11], ["OFFSET", 0]]
+  ↳ app/views/publications/index.html.erb:15
+  Rendered publications/index.html.erb within layouts/application (Duration: 51.2ms | Allocations: 3548)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 884)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 8490)
+Completed 200 OK in 96ms (Views: 71.5ms | ActiveRecord: 1.5ms | Allocations: 9724)
+
+
+Started GET "/personnel" for ::1 at 2024-07-03 14:51:18 -0400
+Processing by PersonnelsController#index as HTML
+  [1m[36mPersonnel Load (0.2ms)[0m  [1m[34mSELECT "personnels".* FROM "personnels"[0m
+  ↳ app/controllers/personnels_controller.rb:10:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering personnels/index.html.erb within layouts/application
+  Rendered personnels/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1301)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.7ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 6397)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.2ms | Allocations: 7192)
+
+
+Started GET "/research" for ::1 at 2024-07-03 14:51:29 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1309)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 922)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 6449)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms | Allocations: 6720)
+
+
+Started GET "/publications" for ::1 at 2024-07-03 14:51:32 -0400
+Processing by PublicationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering publications/index.html.erb within layouts/application
+  [1m[36mPublication Load (0.4ms)[0m  [1m[34mSELECT "publications".* FROM "publications" ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 11], ["OFFSET", 0]]
+  ↳ app/views/publications/index.html.erb:15
+  Rendered publications/index.html.erb within layouts/application (Duration: 32.0ms | Allocations: 2333)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | Allocations: 912)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 82.1ms | Allocations: 7481)
+Completed 200 OK in 85ms (Views: 83.4ms | ActiveRecord: 0.4ms | Allocations: 7871)
+
+
+Started GET "/publications" for ::1 at 2024-07-03 14:51:32 -0400
+Processing by PublicationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering publications/index.html.erb within layouts/application
+  [1m[36mPublication Load (0.5ms)[0m  [1m[34mSELECT "publications".* FROM "publications" ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 11], ["OFFSET", 0]]
+  ↳ app/views/publications/index.html.erb:15
+  Rendered publications/index.html.erb within layouts/application (Duration: 24.8ms | Allocations: 2278)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 901)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 76.0ms | Allocations: 7271)
+Completed 200 OK in 79ms (Views: 77.2ms | ActiveRecord: 0.5ms | Allocations: 7660)
+
+
+Started GET "/blog" for ::1 at 2024-07-03 14:51:54 -0400
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE (EXTRACT(year from sort_date) = 2024) ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:40:in `each_with_index'
+  Rendered posts/index.html.erb within layouts/application (Duration: 126.3ms | Allocations: 5657)
+  Rendered layout layouts/application.html.erb (Duration: 127.3ms | Allocations: 5739)
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 0.8ms | Allocations: 8686)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "from": syntax error):
+    37: 
+    38:   <%= link_to 'Add a New Blog Post', new_post_path, class: "mb-5 ml-5 btn btn-large btn-primary" if user_signed_in? %>
+    39:   <% if (@posts) %>
+    40:     <% @posts.each_with_index do |post, i| %>
+    41: 
+    42:       <% if (post.images.count > 1) %>
+    43:         <div class="container-fluid px-1 px-md-5 blog-post">
+  
+app/views/posts/index.html.erb:40:in `each_with_index'
+app/views/posts/index.html.erb:40
+app/controllers/posts_controller.rb:11:in `index'
+Started GET "/research" for ::1 at 2024-07-03 14:52:25 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1309)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 922)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 6438)
+Completed 200 OK in 34ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 6710)
+
+
+Started GET "/brainfreeze" for ::1 at 2024-07-03 14:54:02 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1612)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 6722)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms | Allocations: 6993)
+
+
+Started GET "/personnel" for ::1 at 2024-07-03 14:54:28 -0400
+Processing by PersonnelsController#index as HTML
+  [1m[36mPersonnel Load (0.8ms)[0m  [1m[34mSELECT "personnels".* FROM "personnels"[0m
+  ↳ app/controllers/personnels_controller.rb:10:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering personnels/index.html.erb within layouts/application
+  Rendered personnels/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1308)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 4.4ms | Allocations: 919)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 6440)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.8ms | Allocations: 7237)
+
+
+Started GET "/research" for ::1 at 2024-07-03 14:54:32 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1309)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 922)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 6459)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms | Allocations: 6729)
+
+
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at C:/Users/Bradley Gray-Hall/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for 127.0.0.1 at 2024-07-23 22:09:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2004.6ms | Allocations: 55709)
+  Rendered layouts/_fonts.html.erb (Duration: 5.7ms | Allocations: 97)
+  Rendered layouts/_google_analytics.html.erb (Duration: 13.8ms | Allocations: 116)
+  Rendered layouts/_navbar.html.erb (Duration: 35.5ms | Allocations: 1248)
+  Rendered layouts/_footer.html.erb (Duration: 16.6ms | Allocations: 151)
+  Rendered layout layouts/application.html.erb (Duration: 2144.6ms | Allocations: 62365)
+Completed 200 OK in 2327ms (Views: 2190.2ms | ActiveRecord: 0.0ms | Allocations: 65958)
+
+
+Started GET "/personnel" for 127.0.0.1 at 2024-07-23 22:09:17 -0400
+Processing by PersonnelsController#index as HTML
+  [1m[36mPersonnel Load (0.3ms)[0m  [1m[34mSELECT "personnels".* FROM "personnels"[0m
+  ↳ app/controllers/personnels_controller.rb:10:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering personnels/index.html.erb within layouts/application
+  Rendered personnels/index.html.erb within layouts/application (Duration: 97.8ms | Allocations: 2689)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 927)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 112.3ms | Allocations: 7870)
+Completed 200 OK in 170ms (Views: 117.7ms | ActiveRecord: 0.3ms | Allocations: 11782)
+
+
+Started GET "/research" for 127.0.0.1 at 2024-07-23 22:09:20 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 39.9ms | Allocations: 1715)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 916)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 6844)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.0ms | Allocations: 7177)
+
+
+Started GET "/publications" for 127.0.0.1 at 2024-07-23 22:10:06 -0400
+Processing by PublicationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering publications/index.html.erb within layouts/application
+  [1m[36mPublication Load (0.4ms)[0m  [1m[34mSELECT "publications".* FROM "publications" ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 11], ["OFFSET", 0]]
+  ↳ app/views/publications/index.html.erb:15
+  Rendered publications/index.html.erb within layouts/application (Duration: 42.4ms | Allocations: 3506)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 885)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 8449)
+Completed 200 OK in 72ms (Views: 59.3ms | ActiveRecord: 0.4ms | Allocations: 9677)
+
+
+Started GET "/blog" for 127.0.0.1 at 2024-07-23 22:10:08 -0400
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE (EXTRACT(year from sort_date) = 2024) ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:40:in `each_with_index'
+  Rendered posts/index.html.erb within layouts/application (Duration: 102.1ms | Allocations: 5719)
+  Rendered layout layouts/application.html.erb (Duration: 102.7ms | Allocations: 5802)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 4.4ms | Allocations: 8757)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "from": syntax error):
+    37: 
+    38:   <%= link_to 'Add a New Blog Post', new_post_path, class: "mb-5 ml-5 btn btn-large btn-primary" if user_signed_in? %>
+    39:   <% if (@posts) %>
+    40:     <% @posts.each_with_index do |post, i| %>
+    41: 
+    42:       <% if (post.images.count > 1) %>
+    43:         <div class="container-fluid px-1 px-md-5 blog-post">
+  
+app/views/posts/index.html.erb:40:in `each_with_index'
+app/views/posts/index.html.erb:40
+app/controllers/posts_controller.rb:11:in `index'
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-07-23 22:10:17 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 30.5ms | Allocations: 1633)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 6757)
+Completed 200 OK in 43ms (Views: 43.1ms | ActiveRecord: 0.0ms | Allocations: 7033)
+
+
+Started GET "/brainfreeze/2024" for 127.0.0.1 at 2024-07-23 22:10:22 -0400
+Processing by StaticPagesController#brainfreeze2024 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2024.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2024.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1638)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 6762)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 7032)
+
+
+Started GET "/brainfreeze/2023" for 127.0.0.1 at 2024-07-23 22:10:28 -0400
+Processing by StaticPagesController#brainfreeze2023 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2023.html.erb within layouts/application
+  Rendered static_pages/brainfreeze2023.html.erb within layouts/application (Duration: 19.2ms | Allocations: 1562)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 6689)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms | Allocations: 6959)
+
+
+Started GET "/brainfreeze/2022" for 127.0.0.1 at 2024-07-23 22:10:32 -0400
+Processing by StaticPagesController#brainfreeze2022 as HTML
+  [1m[36mActivityLog Sum (0.1ms)[0m  [1m[34mSELECT SUM("activity_logs"."number_of_steps") FROM "activity_logs"[0m
+  ↳ app/controllers/static_pages_controller.rb:17:in `brainfreeze2022'
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze2022.html.erb within layouts/application
+  [1m[36mActivityLog Load (0.2ms)[0m  [1m[34mSELECT "activity_logs".* FROM "activity_logs" ORDER BY created_at DESC[0m
+  ↳ app/views/static_pages/brainfreeze2022.html.erb:136
+  Rendered static_pages/brainfreeze2022.html.erb within layouts/application (Duration: 29.7ms | Allocations: 3222)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 924)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 8164)
+Completed 200 OK in 62ms (Views: 43.1ms | ActiveRecord: 1.2ms | Allocations: 15833)
+
+
+Started GET "/personnel" for 127.0.0.1 at 2024-07-23 22:10:45 -0400
+Processing by PersonnelsController#index as HTML
+  [1m[36mPersonnel Load (0.2ms)[0m  [1m[34mSELECT "personnels".* FROM "personnels"[0m
+  ↳ app/controllers/personnels_controller.rb:10:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering personnels/index.html.erb within layouts/application
+  Rendered personnels/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1307)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.8ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 6463)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.2ms | Allocations: 7258)
+
+
+Started GET "/publications" for 127.0.0.1 at 2024-07-23 22:10:48 -0400
+Processing by PublicationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering publications/index.html.erb within layouts/application
+  [1m[36mPublication Load (0.2ms)[0m  [1m[34mSELECT "publications".* FROM "publications" ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 11], ["OFFSET", 0]]
+  ↳ app/views/publications/index.html.erb:15
+  Rendered publications/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2224)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 870)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 7081)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.2ms | Allocations: 7467)
+
+
+Started GET "/blog" for 127.0.0.1 at 2024-07-23 22:10:50 -0400
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE (EXTRACT(year from sort_date) = 2024) ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:40:in `each_with_index'
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3713)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3794)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms | Allocations: 4162)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "from": syntax error):
+    37: 
+    38:   <%= link_to 'Add a New Blog Post', new_post_path, class: "mb-5 ml-5 btn btn-large btn-primary" if user_signed_in? %>
+    39:   <% if (@posts) %>
+    40:     <% @posts.each_with_index do |post, i| %>
+    41: 
+    42:       <% if (post.images.count > 1) %>
+    43:         <div class="container-fluid px-1 px-md-5 blog-post">
+  
+app/views/posts/index.html.erb:40:in `each_with_index'
+app/views/posts/index.html.erb:40
+app/controllers/posts_controller.rb:11:in `index'
+Started GET "/blog" for 127.0.0.1 at 2024-07-23 22:10:55 -0400
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE (EXTRACT(year from sort_date) = 2024) ORDER BY sort_date DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:40:in `each_with_index'
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3714)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3795)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms | Allocations: 4165)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "from": syntax error):
+    37: 
+    38:   <%= link_to 'Add a New Blog Post', new_post_path, class: "mb-5 ml-5 btn btn-large btn-primary" if user_signed_in? %>
+    39:   <% if (@posts) %>
+    40:     <% @posts.each_with_index do |post, i| %>
+    41: 
+    42:       <% if (post.images.count > 1) %>
+    43:         <div class="container-fluid px-1 px-md-5 blog-post">
+  
+app/views/posts/index.html.erb:40:in `each_with_index'
+app/views/posts/index.html.erb:40
+app/controllers/posts_controller.rb:11:in `index'
+Started GET "/research" for 127.0.0.1 at 2024-07-23 22:10:59 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1306)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 6432)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 6701)
+
+
+Started GET "/brainfreeze" for 127.0.0.1 at 2024-07-23 22:11:40 -0400
+Processing by StaticPagesController#brainfreeze_default as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/brainfreeze_default.html.erb within layouts/application
+  Rendered static_pages/brainfreeze_default.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1306)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 6447)
+Completed 200 OK in 18ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 6717)
+
+
+Started GET "/personnel" for 127.0.0.1 at 2024-07-23 22:13:45 -0400
+Processing by PersonnelsController#index as HTML
+  [1m[36mPersonnel Load (0.1ms)[0m  [1m[34mSELECT "personnels".* FROM "personnels"[0m
+  ↳ app/controllers/personnels_controller.rb:10:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering personnels/index.html.erb within layouts/application
+  Rendered personnels/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1307)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 923)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 6445)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.1ms | Allocations: 7237)
+
+
+Started GET "/research" for 127.0.0.1 at 2024-07-23 22:13:47 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1300)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 915)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 6377)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 6646)
+
+
+Started GET "/research" for 127.0.0.1 at 2024-07-23 22:43:05 -0400
+Processing by StaticPagesController#research as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/research.html.erb within layouts/application
+  Rendered static_pages/research.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1306)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 921)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 6427)
+Completed 200 OK in 27ms (Views: 26.8ms | Allocations: 6696)
+
+
