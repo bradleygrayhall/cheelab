@@ -9093,3 +9093,104 @@ getter and setter.
 
 Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
  (called from <main> at /home/bradley/Desktop/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at /home/bradley/Desktop/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at /home/bradley/Desktop/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at /home/bradley/Desktop/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Using legacy connection handling is deprecated. Please set
+`legacy_connection_handling` to `false` in your application.
+
+The new connection handling does not support `connection_handlers`
+getter and setter.
+
+Read more about how to migrate at: https://guides.rubyonrails.org/active_record_multiple_databases.html#migrate-to-the-new-connection-handling
+ (called from <main> at /home/bradley/Desktop/cheelab/app/models/application_record.rb:3)
+DEPRECATION WARNING: Non-URL-safe CSRF tokens are deprecated. Use 6.1 defaults or above. (called from block (3 levels) in <class:Railtie> at /usr/share/rvm/gems/ruby-3.2.3/gems/actionpack-7.0.4/lib/action_controller/railtie.rb:80)
+Started GET "/" for 127.0.0.1 at 2024-11-03 00:22:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 146.8ms | Allocations: 48218)
+  Rendered layouts/_fonts.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.5ms | Allocations: 115)
+  Rendered layouts/_navbar.html.erb (Duration: 5.1ms | Allocations: 1105)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 166.6ms | Allocations: 53649)
+Completed 200 OK in 176ms (Views: 169.1ms | ActiveRecord: 0.0ms | Allocations: 56834)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-11-03 00:22:09 -0400
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-11-03 00:22:09 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 52.7ms | Allocations: 10546)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 776)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 65.4ms | Allocations: 14362)
+Completed 200 OK in 84ms (Views: 67.5ms | ActiveRecord: 1.1ms | Allocations: 21351)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2024-11-03 00:22:47 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"melissa.chee@carleton.ca", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "melissa.chee@carleton.ca"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 10ms (ActiveRecord: 3.1ms | Allocations: 3745)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"melissa.chee@carleton.ca", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2194)
+  Rendered layouts/_fonts.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 728)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 5931)
+Completed 200 OK in 324ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 7578)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2024-11-03 00:22:56 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"melissa.chee@carleton.ca", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "melissa.chee@carleton.ca"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 13ms (ActiveRecord: 1.0ms | Allocations: 1459)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"melissa.chee@carleton.ca", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2183)
+  Rendered layouts/_fonts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_google_analytics.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 729)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 5918)
+Completed 200 OK in 357ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 6399)
+
+
