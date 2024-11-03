@@ -57,7 +57,6 @@ end
 group :production do
   gem 'aws-sdk-s3'
   gem 'pg'
-  gem 'turbo-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
