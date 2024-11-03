@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   get 'blog/none' => 'posts#default'
   get 'hello' => 'static_pages#hello'
   get 'login' => redirect('/users/sign_in')
-  #get '/users/sign_out' => redirect('/')
+  delete '/users/sign_out'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
