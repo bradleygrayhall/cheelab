@@ -2,13 +2,11 @@
   <%= stylesheet_link_tag "scaffolds" %>
   <script src='https://cdn.tiny.cloud/1/y5gr5cxmfutm8qxpjkmo368zjqwk2jznz7iumllqlg7kirmz/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
 <% end %>
-
 <div class="container">
   <%= form_with(model: post, local: true) do |form| %>
     <% if post.errors.any? %>
       <div id="error_explanation alert alert-danger">
         <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
-
         <ul>
           <% post.errors.full_messages.each do |message| %>
             <li><%= message %></li>
@@ -20,47 +18,41 @@
       <%= form.label :title %>
       <%= form.text_field :title, class: "form-control" %>
     </div>
-
     <div class="field form-group">
       <%= form.label :text %>
       <%= form.text_area :text, id: "post", class: "form-control" %>
     </div>
-
     <div class="field form-group">
       <%= form.label :sort_date %>
       <%= form.text_field :sort_date, type: :date, class: "form-control" %>
     </div>
-
     <div class="field form-group">
       <%= form.label :text_date %>
       <%= form.text_field :text_date, class: "form-control" %>
     </div>
-
     <div class="field form-group">
       <%= form.label :images %>
       <%= form.file_field :images, multiple: true, class: "form-control" %>
     </div>
-
     <div class="actions">
       <%= form.submit %>
     </div>
   <% end %>
 </div>
-
 <script>
-    tinymce.init({
-        selector: '#post',
-        height: 500,
-        menubar: true,
-        plugins: [
-            'advlist autolink lists link image charmap print preview anchor',
-            'searchreplace visualblocks code fullscreen',
-            'insertdatetime media table paste code help wordcount'
-        ],
-        toolbar: 'undo redo | formatselect | ' +
-            'bold italic backcolor | alignleft aligncenter ' +
-            'alignright alignjustify | bullist numlist outdent indent | ' +
-            'link removeformat'
+  tinymce.init({
+      selector: '#post',
+      height: 500,
+      menubar: true,
+      plugins: [
+          'advlist autolink lists link image charmap print preview anchor',
+          'searchreplace visualblocks code fullscreen',
+          'insertdatetime media table paste code help wordcount'
+      ],
+      toolbar: 'undo redo | formatselect | ' +
+          'bold italic backcolor | alignleft aligncenter ' +
+          'alignright alignjustify | bullist numlist outdent indent | ' +
+          'link removeformat'
 
-    });
+  });
 </script>

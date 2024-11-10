@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :publications
   root 'static_pages#home'
   get 'research' => 'static_pages#research'
-  get 'contact' => 'static_pages#contact'
+  get 'contact' => 'contact_us#contact'
   get 'admin' => 'static_pages#admin'
   get 'blog' => 'posts#index'
   get 'personnel' => 'personnels#index'

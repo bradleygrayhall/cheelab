@@ -7,7 +7,7 @@ class StaticPagesController < ApplicationController
 
   def research; end
 
-  def contact; end
+  #def contact; end
 
   def brainfreeze; end
 
