@@ -1,0 +1,123 @@
+<% @contact.each do |contact| %>
+  <% if user_signed_in? %>
+    <div class="btn-group" role="group">
+      <%= link_to 'Edit', edit_contact_path(contact), class: "btn  btn-primary" %>
+      <%= button_to 'Destroy', "#", :method => :delete, class: "btn  btn-danger", data: { confirm: 'Are you sure?' } %>
+    </div>
+  <% end %>
+<% end %>
+<br/>
+<!--Row 1 Starts-->
+<div class="row posi">
+  <!--Position 1-->
+  <div class="col col-lg-3   col-12 apply">
+    <h5>Graduate Student</h5>
+    <br/>
+    <p> Please email melissa.chee@carleton.ca with a paragraph statement of your 
+      research interests; curriculum vitae; names of two references; and transcript. 
+    </p>
+    <br/>
+    <br/>
+    <br/>
+    <p class="">Learn more about the <a href="https://graduate.carleton.ca/cu-programs/neuroscience-masters/"><strong>MSc in Neuroscience</strong></a> at Carleton University</p>
+    <p> Learn more about the <a href="https://graduate.carleton.ca/cu-programs/neuroscience-phd/"><strong>PhD in Neuroscience</strong></a> at Carleton University</p>
+  </div>
+  <!--Position 2-->
+  <div class="col col-lg-3   col-12  apply">
+    <h5>Honors Thesis Student</h5>
+    <br/>
+    <p>*UPDATE AUG 2024.  Applications for Honors Thesis Positions will open in January or February 2025. You may be asked to prepare a written statement of your research interests and career goals; one-page resume; and transcript.*
+    </p>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <p>Learn more about the <a href="https://carleton.ca/neuroscience/4th-year-honours-projects/"><strong>honors project</strong></a> applications </p>
+    <br/>
+  </div>
+  <!--Position 3-->
+  <div class="col col-lg-3  col-12 apply">
+    <h5>I-CUREUS</h5>
+    <br/>
+    <p>
+      <!--Please email melissa.chee@carleton.ca with a paragraph statement of
+            your research interests, career goals, and transcript. Please note
+            that only Neuroscience majors are currently considered.-->
+      *UPDATE AUG 2024. Thank you for your interest. Unfortunately we do not have any I-CUREUS positions available for Fall 2024 or Winter 2025*
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p class="apply-p pp">Learn more about <a href="https://carleton.ca/discoverycentre/funding-opportunities/icureus/""><strong>I-CUREUS</strong></a> at Carleton University</p>
+  </div>
+</div>
+<!--Row 1 Ends-->
+<!--Row 2 Starts-->
+<div class="row posi" style="min-height: 600px;">
+  <!--Position 4-->
+  <div class="col col-lg-3  col-12 apply">
+    <h5>Work Study Student</h5>
+    <br/>
+    <p class="apply-p">There are additional opportunities to join the lab via the cuHIRE Work Study Program. Please contact the Awards Office to determine your eligibility.</p>
+    <br/>
+    <br/>
+    <p class="apply-p pp">Learn more about <a href="https://carleton.ca/awards/students/"><strong>Work Study</strong></a> at Carleton University</p>
+  </div>
+  <!--Position 5-->
+  <div class="col col-lg-3   col-12  apply">
+    <h5>ACT to Employ</h5>
+    <br />
+    <p>
+      For students with disabilities, please email
+      melissa.chee@carleton.ca to inquire about available positions.
+      Please indicate if you are a registered
+      <a href="https://carleton.ca/pmc/"><strong>PMC</strong></a> student.
+    </p>
+    <br />
+    <p class="apply-p pp">
+      Learn more about
+      <a href="https://carleton.ca/act/students/"
+              ><strong>ACT to Employ</strong>
+      </a>
+      at Carleton University
+    </p>
+  </div>
+  <!--Position 6-->
+  <div class="col col-lg-3  col-12 apply">
+    <h5>Research Volunteers</h5>
+    <br/>
+    <p class="apply-p">
+      Please email melissa.chee@carleton.ca with a paragraph 
+      statement of your research interests and career goals.
+    </p>
+    <br/>
+    <br/>
+    <br/>
+    <p class="apply-p pp">
+      *UPDATE AUG 2024. Thank you for your interest. All positions are currently filled.*
+    </p>
+    <br/>
+  </div>
+</div>
+<!--Row 2 Ends-->
+</div>
+<div class="modal open">
+  <div class="modal-overlay" onclick="closeModal()">
+  </div>
+  <div class="modal-card">
+    <div class="modal-body">
+      <div class="close-modal">
+        <button class="close-button" onclick="closeModal()" >
+          <i class="fas fa-times close-button-x"></i>
+        </button>
+      </div>
+      <div class="modal-content">
+        Thank you for your interest! 
+      </br>
+      Interview Bookings will be available starting February 10th.
+    </div>
+  </div>
+</div>
+</div>

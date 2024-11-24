@@ -6,9 +6,10 @@ Rails.application.routes.draw do
   resources :posts
   resources :personnels
   resources :publications
+  resources :contacts
   root 'static_pages#home'
   get 'research' => 'static_pages#research'
-  get 'contact' => 'contact_us#contact'
+  get 'contact' => 'contacts#index'
   get 'admin' => 'static_pages#admin'
   get 'blog' => 'posts#index'
   get 'personnel' => 'personnels#index'

@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  bodyI: MyString
+  bodyII: MyString
+  learnmoreI: MyString
+  learnmoreII: MyString
+
+two:
+  title: MyString
+  bodyI: MyString
+  bodyII: MyString
+  learnmoreI: MyString
+  learnmoreII: MyString

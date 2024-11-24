@@ -1,0 +1,109 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag "scaffolds" %>
+  <script src='https://cdn.tiny.cloud/1/y5gr5cxmfutm8qxpjkmo368zjqwk2jznz7iumllqlg7kirmz/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
+<% end %>
+<div class="container">
+  <%= form_with(model: contact, local: true) do |form| %>
+    <% if contact.errors.any? %>
+      <div id="error_explanation alert alert-danger">
+        <h2><%= pluarilze(contact.errors.count, "error") %> prohibited this publication from being saved:</h2>
+        <ul>
+          <% contact.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="field form-group">
+      <%= form.label :title %>
+      <%= form.text_field :title, class:"form-control" %>
+    </div>
+    <div class="field form-group">
+      <%= form.label :Body_1 %>
+      <%= form.text_area :bodyI, id: "bodyI", class:"form-control" %>
+    </div>
+    <div class="field form-group">
+      <%= form.label :Body_2 %>
+      <%= form.text_area :bodyII, id: "bodyII", class: "form-control" %>
+    </div>
+    <div class="field form-group">
+      <%= form.label :Learn_More_1 %>
+      <%= form.text_area :learnmoreI, id: "learnmoreI", class: "form-control" %>
+    </div>
+    <div class="field form-group">
+      <%= form.label :Learn_More_2 %>
+      <%= form.text_area :learnmoreII, id: "learnmoreII", class: "form-control" %>
+    </div>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+  <% end %>
+</div>
+<script>
+  tinymce.init({
+      selector: '#bodyI',
+      height: 500,
+      menubar: true,
+      plugins: [
+          'advlist autolink lists link image charmap print preview anchor',
+          'searchreplace visualblocks code fullscreen',
+          'insertdatetime media table paste code help wordcount'
+      ],
+      toolbar: 'undo redo | formatselect | ' +
+          'bold italic backcolor | alignleft aligncenter ' +
+          'alignright alignjustify | bullist numlist outdent indent | ' +
+          'link removeformat'
+
+  });
+</script>
+<script>
+  tinymce.init({
+      selector: '#bodyII',
+      height: 500,
+      menubar: true,
+      plugins: [
+          'advlist autolink lists link image charmap print preview anchor',
+          'searchreplace visualblocks code fullscreen',
+          'insertdatetime media table paste code help wordcount'
+      ],
+      toolbar: 'undo redo | formatselect | ' +
+          'bold italic backcolor | alignleft aligncenter ' +
+          'alignright alignjustify | bullist numlist outdent indent | ' +
+          'link removeformat'
+
+  });
+</script>
+<script>
+  tinymce.init({
+      selector: '#learnmoreI',
+      height: 500,
+      menubar: true,
+      plugins: [
+          'advlist autolink lists link image charmap print preview anchor',
+          'searchreplace visualblocks code fullscreen',
+          'insertdatetime media table paste code help wordcount'
+      ],
+      toolbar: 'undo redo | formatselect | ' +
+          'bold italic backcolor | alignleft aligncenter ' +
+          'alignright alignjustify | bullist numlist outdent indent | ' +
+          'link removeformat'
+
+  });
+</script>
+<script>
+  tinymce.init({
+      selector: '#learnmoreII',
+      height: 500,
+      menubar: true,
+      plugins: [
+          'advlist autolink lists link image charmap print preview anchor',
+          'searchreplace visualblocks code fullscreen',
+          'insertdatetime media table paste code help wordcount'
+      ],
+      toolbar: 'undo redo | formatselect | ' +
+          'bold italic backcolor | alignleft aligncenter ' +
+          'alignright alignjustify | bullist numlist outdent indent | ' +
+          'link removeformat'
+
+  });
+</script>
