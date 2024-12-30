@@ -19,7 +19,7 @@ class StaticPagesController < ApplicationController
     @meter_height = @total_steps.to_f * 0.0001
   end
 
-
+  
 
   def admin; end
 end

@@ -6,6 +6,7 @@ class CreateContacts < ActiveRecord::Migration[7.0]
       t.string :bodyII
       t.string :learnmoreI
       t.string :learnmoreII
+      t.integer :sortCard
 
       t.timestamps
     end

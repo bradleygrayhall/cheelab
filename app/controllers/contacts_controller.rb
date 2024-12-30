@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
     Contact.all.each do |contact|
       @contact.push(contact)
     end
-    @contact.sort_by!(&:id)
+    @contact.sort_by!(&:sortCard)
   end
 
 

@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   get 'blog/none' => 'posts#default'
   get 'hello' => 'static_pages#hello'
   get 'login' => redirect('/users/sign_in')
-  
-
+  get 'research/areas' => 'static_pages#areas'
+  get 'research/techniques' => 'static_pages#techniques'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
