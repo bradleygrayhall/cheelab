@@ -1,12 +1,12 @@
 class ContactsController < ApplicationController
-  before_action :set_personnel, only: %i[show edit update destroy]
+  before_action :set_contact, only: %i[show edit update destroy]
 
   def index
     @contact = []
     Contact.all.each do |contact|
       @contact.push(contact)
     end
-    @contact.sort_by!(&:sortCard)
+    @contact.sort_by!(&:sort_card)
   end
 
 
@@ -51,12 +51,12 @@ class ContactsController < ApplicationController
 
   private
 
-  def set_personnel
+  def set_contact
     @contact = Contact.find(params[:id])
   end
 
   def contact_params
-    params.require(:contact).permit(:title, :bodyI, :bodyII, :learnmoreI, :learnmoreII)
+    params.require(:contact).permit(:title, :bodyI, :bodyII, :learnmoreI, :learnmoreII,:sort_card)
   end
 
 end

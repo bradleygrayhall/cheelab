@@ -35,8 +35,8 @@
       <%= form.text_area :learnmoreII, id: "learnmoreII", class: "form-control" %>
     </div>
     <div class=" form-group">
-      <%= form.label :sortCard, "Number for Sorting"%>
-      <%= form.text_field :sortCard, class:"form-control" %>
+      <%= form.label :sort_card, "Number for Sorting"%>
+      <%= form.text_field :sort_card, class:"form-control" %>
     </div>
     <div class="actions">
       <%= form.submit %>
@@ -80,23 +80,6 @@
 <script>
   tinymce.init({
       selector: '#learnmoreI',
-      height: 500,
-      menubar: true,
-      plugins: [
-          'advlist autolink lists link image charmap print preview anchor',
-          'searchreplace visualblocks code fullscreen',
-          'insertdatetime media table paste code help wordcount'
-      ],
-      toolbar: 'undo redo | formatselect | ' +
-          'bold italic backcolor | alignleft aligncenter ' +
-          'alignright alignjustify | bullist numlist outdent indent | ' +
-          'link removeformat'
-
-  });
-</script>
-<script>
-  tinymce.init({
-      selector: '#learnmoreII',
       height: 500,
       menubar: true,
       plugins: [
